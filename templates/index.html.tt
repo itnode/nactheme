@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+    <head>
+    
+        <title>Theme</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+        <meta name="viewport" content="width=device-width,   maximum-scale=1.0" />
+        
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700|Open+Sans:400,700,600,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/unsemantic.css" type="text/css"  />
+        <link rel="stylesheet" href="/style.css" type="text/css"  />
+                 
+    </head>
+    <body>
+
+    [% SET char = "◻" # "◼" %]
+
+
+            <h1 class="infor">NAK-NRW</h1>
+
+            <h3 class="info">Startseite</h3>
+       
+        <div class="grid-container">
+
+            <ul id="toolbar">
+                <li><a href="">[% char %] Kontakt</a></li>
+                <li><a href="">[% char %] Impressum</a><li>
+                <li><a href="">[% char %] Sitemap</a></li>
+
+            </ul>
+            <hr class="grey" />
+
+            <div class="grid-100 clearfix" id="header"> 
+
+                <img src="logo.png" id="logo"> 
+
+                <h1>Neuapostolische Kirche</h1>
+                <h2>Nordrhein-Westfalen</h2>
+
+            </div>
+
+            <hr />
+
+        <div id="content" class="grid-container">
+
+
+                <div class="grid-75 tablet-grid-70">
+
+                    <h1>Herzlich  willkommen.</h3>
+
+                    <div class="block">
+
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="grid-25 tablet-grid-30">
+
+                    <h2>Termine</h2>
+
+                    <div class="block">
+
+
+                        <p>
+                        [% FOREACH x IN [ 1,2,3,4,5 ] %] 
+                            <strong>[% char %] Titel des Termines[% IF x == 3 %], und mehrzeilig, passt auch ins Konzept[% END %]</strong><br />
+                            <small> So, 6, März 2014, 9.30 Uhr</small><br />
+                            <br />
+                        [% END %]
+                        </p>
+
+                        
+
+                    </div>
+
+                    <h2>Schaukasten</h2>
+
+                    <div class="block">
+
+                        <img src="/img/schaukasten.jpg" />
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            
+                    <hr />            
+
+        <div id="footer" class="grid-container" >
+                
+
+                    <div class="grid-40 tablet-grid-40">
+                        
+                        <h3>Kurzmeldungen</h3>
+
+                        <div class="block grid-parent clearfix">
+
+                            [% FOREACH x IN [ 40,80,120,43,20 ] %]
+
+
+                            <div class="grid-20 tablet-grid-20 grid-parent"> 
+
+                                <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-[% x | format("%03d") %].jpg');">        </div>
+            
+                            </div>
+
+                            <div class="grid-70 tablet-grid-80">
+   
+                                <a href="" style="text-decoration: none; padding: 0 0 10px 0; line-height: 17px; font-size: 12px">
+                                    <small>Fr, 09. März 2014</small><br />
+                                    <strong>[% "Anmeldung zum IKT gestartet und weitere Informtionen finden sie online auf " | truncate(x) %]</strong> 
+                                </a>
+            
+                            </div>
+
+
+                            <div class="clearfix" > </div>
+
+                            [% END %]
+
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="grid-30 tablet-grid-30">
+
+                        <h3>Projekte in Nordrhein-Westfalen</h3>
+
+                        <div class="block">
+
+                            <p>Weitere Projekte der Neuapostolischen Kirche Nordrhein-Westfalen</p>
+                            <p>&nbsp;</p>
+                            <ul>
+                
+                                <li><a href="">Gemeindesuche NRW</a></li>
+                                <li><a href="">ESRA/NAK-Dienste</a></li>
+                                <li><a href="">Jugend Online</a></li>
+                                <li><a href="">Senioren NRW</a></li>
+                                <li><a href="">Fortbildungsprogramm</a></li>
+                                <li><a href="">GZD Reservierung</a></li>
+                                <li><a href="">NAK Karitativ</a></li>
+
+
+                            </ul>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="grid-30 tablet-grid-30">
+
+                        <h3>Die Neuapostolische Kirche</h3>
+
+                        <div class="block">
+
+                            <ul>
+                                
+                                <li><a href="">Neuapostolische Kirche International</a></li>
+                                <li><a href="">Neuapostolische Kirche in Deutschland</a></li>
+                                <li> &nbsp;</li>
+                                <li><a href="">Berlin-Brandenburg</a></li>
+                                <li><a href="">Hessen/Rheinland-Pfalz/Saarland</a></li>
+                                <li><a href="">Niedersachsen/Sachen-Anhalt/Thüringen</a></li>
+                                <li><a href="">Norddeutschland</a></li>
+                                <li><a href="">Nordrhein-Westfalen</a></li>
+                                <li><a href="">Süddeutschland</a></li>
+
+
+
+
+
+
+                            </ul>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <hr class="grey" />
+
+            </div>
+        </div>
+
+
+        <h3>Info</h3>
+
+
+
+        
+        <h1>Bezirk</h1>
+
+        <h3>Startseite</h3>
+
+
+        <h3>Bericht</h3>
+
+
+        <h3>Info</h3>
+
+
+
+
+
+
+
+    </body>
+
+</html>
