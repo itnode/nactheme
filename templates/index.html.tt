@@ -464,7 +464,7 @@
                
                     <div class="grid-30 tablet-grid-30">
 
-                        <h3>Anfahrt und Kontakt</h3>
+                        <h3>Kontakt</h3>
 
                         <div class="block">
 
@@ -516,21 +516,16 @@
 
                      <div class="grid-25 tablet-grid-35">
 
-                        <h3>iProjekte in Nordrhein-Westfalen</h3>
+                        <h3>Rund um Dortmund</h3>
 
                         <div class="block">
 
-                            <p>Projekte der Neuapostolischen Kirche Nordrhein-Westfalen</p>
                             <ul>
                 
-                                <li><a href="">Gemeindesuche NRW</a></li>
-                                <li><a href="">ESRA/NAK-Dienste</a></li>
-                                <li><a href="">Jugend Online</a></li>
-                                <li><a href="">Senioren NRW</a></li>
-                                <li><a href="">Fortbildungsprogramm</a></li>
+                                <li><a href="">Bezirk Dortmund-Ost</a></li>
+                                <li><a href="">Bezirk Dortmund-West</a></li>
+                                <li><a href="">Bezirk Oberhausen</a></li>
                                 <li><a href="">GZD Reservierung</a></li>
-                                <li><a href="">NAK Karitativ</a></li>
-
 
                             </ul>
 
@@ -599,7 +594,9 @@
 
                     <div class="block">
 
-                        <p>Eine Infobox mit etwas Text für alle Seiten</p>
+                        <p>Eine Infobox mit etwas Text für alle Seiten. Immer Links und auch mit mehreren Absätzen</p>
+                        <p>Eine Infobox mit etwas Text für alle Seiten. Immer Links und auch mit mehreren Absätzen</p>
+
 
                     </div>
 
