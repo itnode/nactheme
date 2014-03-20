@@ -21,6 +21,72 @@
 
             <h3 class="info">Startseite</h3>
 
+        [% banner = BLOCK %]
+
+        <h2>Banner</h2>
+
+        <div class="block">
+
+                <div style="width: 100%; margin-bottom: 10px; padding-bottom: 40%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-004.jpg');">  </div>
+                <div style="width: 100%; margin-bottom: 10px; padding-bottom: 40%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-007.jpg');">  </div>
+                <div style="width: 100%; margin-bottom: 10px; padding-bottom: 40%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-009.jpg');">  </div>
+
+        </div>
+
+        [% END %]
+
+         [% archiv = BLOCK %]
+            <h2>Archiv</h2>
+
+            <div class="block">
+
+
+                <ul class="list">
+                [% FOREACH i IN ['Aktuelle',2014,2013,2012,2011,2010 ] %]
+
+                    <li><a href="" class="active">[% char %] [% i %]</a></li>
+
+                [% END %]
+                </ul>
+
+                
+                
+
+            </div>
+
+        [% END %]
+
+        [% category = BLOCK %]
+
+            <h2>Kategorie</h2>
+
+            <div class="block">
+
+            
+                <ul class="list">
+                [% FOREACH i IN ['Alle','Gemeinde','Bezirk','Gebietskirche','International'] %]
+
+                    <li><a href="" class="active">[% char %] [% i %]</a></li>
+
+                [% END %]
+                </ul>
+
+            </div>
+        
+        [% END %]
+
+    
+        [% schaukasten = BLOCK %]
+
+            <h2>Schaukasten</h2>
+
+            <div class="block">
+
+                <img src="/img/schaukasten.jpg" />
+
+            </div>
+
+        [% END %]
 
         [% header = BLOCK %]
 
@@ -279,24 +345,10 @@
 
                     </div>
 
-                    <h2>Schaukasten</h2>
 
-                    <div class="block">
+                    [% schaukasten %]
 
-                        <img src="/img/schaukasten.jpg" />
-
-                    </div>
-
-
-                    <h2>Banner</h2>
-
-                    <div class="block">
-
-                            <div style="width: 100%; margin-bottom: 10px; padding-bottom: 40%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-004.jpg');">  </div>
-                            <div style="width: 100%; margin-bottom: 10px; padding-bottom: 40%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-007.jpg');">  </div>
-                            <div style="width: 100%; margin-bottom: 10px; padding-bottom: 40%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-009.jpg');">  </div>
-  
-                    </div>
+                    [% banner %]
 
                 </div>
 
@@ -364,43 +416,11 @@
 
                 <div class="grid-25 tablet-grid-30">
 
-                    <h2>Archiv</h2>
-
-                    <div class="block">
 
 
-                        <ul class="list">
-                        [% FOREACH i IN ['Aktuelle',2014,2013,2012,2011,2010 ] %]
+                    [% archiv %]
 
-                            <li><a href="" class="active">[% char %] [% i %]</a></li>
-
-                        [% END %]
-                        </ul>
-
-                       
-                        
-
-                    </div>
-
-                    <h2>Kategorie</h2>
-
-                    <div class="block">
-
-                    
-                        <ul class="list">
-                        [% FOREACH i IN ['Alle','Gemeinde','Bezirk','Gebietskirche','International'] %]
-
-                            <li><a href="" class="active">[% char %] [% i %]</a></li>
-
-                        [% END %]
-                        </ul>
-
-                    </div>
-
-
-                    <h2></h2>
-
-
+                    [% category %]
 
 
                 </div>
@@ -552,21 +572,8 @@
 
         [% END %]
 
+        [% menu_vertical = BLOCK %]
 
-        
-        <h1 class="info">Bezirk</h1>
-
-
-
-        <h3 class="info">Startseite</h3>
-
-        [% header_district %]
-
-
-        <div class="grid-container" id="content">
-
-            <div class="grid-20 tablet-grid-25">
-            
             <ul id="menu-vertical">
 
 
@@ -583,16 +590,29 @@
 
             </ul>
 
+        [% END %]
+        
+        <h1 class="info">Bezirk</h1>
 
-                    <h2>Banner</h2>
 
-                    <div class="block">
 
-                            <div style="width: 100%; margin-bottom: 10px; padding-bottom: 40%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-004.jpg');">  </div>
-                            <div style="width: 100%; margin-bottom: 10px; padding-bottom: 40%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-007.jpg');">  </div>
-                            <div style="width: 100%; margin-bottom: 10px; padding-bottom: 40%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-009.jpg');">  </div>
-  
-                    </div>
+        <h3 class="info">Startseite</h3>
+
+        [% header_district %]
+
+
+        <div class="grid-container" id="content">
+
+            <div class="grid-20 tablet-grid-25">
+           
+
+
+
+                      [% menu_vertical %]
+
+                    [% banner %]
+
+
 
 
                     <h2>Extra</h2>
@@ -706,6 +726,41 @@
         [% header_district %]
 
 
+                <div class="grid-container" id="content">
+
+                    <div class="grid-20 tablet-grid-20">
+
+                        [% menu_vertical %]
+
+                        [% banner %]
+
+                    </div>
+
+                    <div class="grid-55 tablet-grid-55">
+
+                        <div style="width: 100%; margin-bottom: 10px; padding-bottom: 50%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-075.jpg');">        </div>
+
+                        <h2>Der Titel des Beitrags</h2>
+                        <div class="block blockin">
+                            <small>Freitag, 21. März 2014 | Kategorie Gemeinde, Bezirk</small>
+                        </div>
+                        
+
+                        <div class="article">
+
+                            <p><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a</strong></p>
+
+                                                      <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
+                                <p>Dapibus Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus,</p>
+                                <p>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus,</p>
+                                <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus,</p>
+                                <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus,</p>
+                                <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus,</p>
+
+
+                        </div>
+
+
 
                         [% FOREACH x IN [140..159] %]
 
@@ -716,6 +771,23 @@
                             </div>
 
                         [% END %]
+
+                 </div>
+
+                <div class="grid-25 tablet-grid-25">
+                
+
+                    [% archiv %]
+
+                    [% category %]
+                
+                </div>
+    
+                    
+
+            </div>
+
+
 
         [% footer_district %]
 
