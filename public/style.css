@@ -312,6 +312,7 @@ img {
 .article p {
 
     line-height: 18px;
+    margin-bottom: 10px;
 }
 
 .article p strong {
@@ -342,4 +343,78 @@ h2.info {
     color: #000;
     margin: 10px 0;
     
+}
+
+#menu-vertical {
+
+    border: 0;;
+    margin-bottom: 30px;
+    font-size: 0;
+}
+
+#menu-vertical li {
+
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border-left: 1px solid #ddd;
+}
+
+#menu-vertical li a {
+
+    display: block;
+    line-height: 30px;
+    padding-right: 20px;
+    padding-left: 15px;
+    color: #444;
+    text-decoration: none;
+    border: 0;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#menu-vertical li.active {
+
+    border-left: 3px solid #5d99d1;
+}
+
+#menu-vertical li.active a {
+
+   color: #5d99d1;
+   padding-left: 13px;
+
+}
+
+
+#menu-vertical li ul {
+
+    padding: 5px 10px 10px 17px;
+}
+
+#menu-vertical li ul li {
+
+    border: 0 none;
+
+}
+
+#menu-vertical li ul li.active {
+
+    border: none;
+
+}
+
+#menu-vertical li.active ul li a ,
+#menu-vertical li ul li a {
+
+    font-size: 14px;
+    border: 0 none;
+    color: #444;
+    line-height: 24px;
+ }
+
+#menu-vertical li ul li.active a {
+
+    color: #5d99d1;
 }
