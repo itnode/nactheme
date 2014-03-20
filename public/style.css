@@ -470,3 +470,33 @@ h2.info {
 
     color: #5793C9;
 }
+
+
+#navbar {
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 10px; 
+    background: #fff;
+    z-index: 9999;
+}
+
+#navbar a {
+
+    font-size: 13px;
+}
+
+#navbar a:focus,
+#navbar a:active {
+
+    color: #000;
+    text-decoration: none;
+}
+
+#navbar strong {
+
+    font-size: 13px;
+    font-weight: 500;
+}

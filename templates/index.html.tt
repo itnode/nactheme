@@ -17,9 +17,23 @@
     [% SET char = "◻" # "◼" %]
 
 
-            <h1 class="info">NAK-NRW</h1>
+        <div id="navbar">
 
-            <h3 class="info">Startseite</h3>
+            <strong>NAK-NRW</strong>
+
+            <a href="#gk_start">Startseite</a>
+            <a href="#gk_article">Beitrag</a>
+            <a href="#gk_info">Info-Seite</a>
+
+            <strong>Bezirk</strong>
+
+            <a href="#district_start">Startseite</a>
+            <a href="#district_article">Beitrag</a>
+            <a href="#district_info">Info-Seite</a>
+
+
+        </div>
+            
 
         [% banner = BLOCK %]
 
@@ -265,7 +279,8 @@
 
         [% END %]
 
-
+        <a name="gk_start"> </a>
+ 
         [% header %]
 
 
@@ -358,9 +373,8 @@
        [% footer %]
  
 
+        <a name="gk_article"> </a>
         
-        <h3 class="info">Beitrag</h3>
-
         
         [% header %]
 
@@ -429,8 +443,9 @@
 
        [% footer %]
  
-        
-        <h3 class="info">Info</h3>
+
+        <a name="gk_info"> </a>
+
 
         [% header %]
 
@@ -591,12 +606,12 @@
             </ul>
 
         [% END %]
-        
-        <h1 class="info">Bezirk</h1>
 
 
 
-        <h3 class="info">Startseite</h3>
+
+        <a name="district_start"> </a>
+
 
         [% header_district %]
 
@@ -720,8 +735,9 @@
 
         [% footer_district %]
 
+    
+        <a name="district_article"> </a>
 
-        <h3 class="info">Bericht</h3>
 
         [% header_district %]
 
@@ -761,16 +777,21 @@
                         </div>
 
 
+                        <h3>Galerie</h3>
 
-                        [% FOREACH x IN [140..159] %]
+                        <div class="block clearfix">
 
-                            <div class="grid-20 tablet-grid-20 grid-parent"> 
+                            [% FOREACH x IN [140..159] %]
 
-                                <div style="width: 90%; margin-bottom: 10px; margin-right: 10px;  padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-[% x | format("%03d") %].jpg');">        </div>
-            
-                            </div>
+                                <div class="grid-20 tablet-grid-20 grid-parent"> 
 
-                        [% END %]
+                                    <div style="width: 90%; margin-bottom: 10px; margin-right: 10px;  padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-[% x | format("%03d") %].jpg');">        </div>
+                
+                                </div>
+
+                            [% END %]
+
+                        </div>
 
                  </div>
 
@@ -792,9 +813,84 @@
         [% footer_district %]
 
 
-        <h3 class="info">Info</h3>
+
+        <a name="district_info"> </a>
+
 
         [% header_district %]
+
+
+            <div class="grid-container" id="content">
+
+                    <div class="grid-20 tablet-grid-20">
+
+                        [% menu_vertical %]
+
+                        [% banner %]
+
+                    </div>
+
+                    <div class="grid-70 tablet-grid-75">
+
+                        
+                        <h1>Seite mit Information über alles.</h3>
+
+                        <div class="block grid-parent clearfix">
+
+                            <div class="grid-60 tablet-grid-70 grid-parent">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                            
+                            </div>
+
+                            <div class="grid-40 tablet-grid-30">
+                                <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-033.jpg');">        </div>
+                            </div>
+
+                        </div>
+
+                        
+
+                        <h2>Zwischenüberschrift</h3>
+
+                        <div class="block clearfix grid-parent">
+
+                            <div class="grid-40 tablet-grid-30">
+                                <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-032.jpg');">        </div>
+                            </div>
+
+                            <div class="grid-60 tablet-grid-70 grid-parent">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                            
+                            </div>
+
+
+
+                        </div>
+
+
+                        <h2>Zwischenüberschrift</h3>
+
+                        <div class="block clearfix grid-parent">
+
+                            <div class="grid-60 tablet-grid-70 grid-parent">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                            
+                            </div>
+
+                            <div class="grid-40 tablet-grid-30">
+                                <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-032.jpg');">        </div>
+                            </div>
+
+
+
+
+                        </div>
+
+
+                 </div>
+              
+            </div>
+
 
         [% footer_district %]
 
