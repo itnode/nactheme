@@ -17,10 +17,13 @@
     [% SET char = "◻" # "◼" %]
 
 
-            <h1 class="infor">NAK-NRW</h1>
+            <h1 class="info">NAK-NRW</h1>
 
             <h3 class="info">Startseite</h3>
-       
+
+
+        [% header = BLOCK %]
+
         <div class="grid-container">
 
             <ul id="toolbar">
@@ -31,7 +34,7 @@
             </ul>
             <hr class="grey" />
 
-            <div class="grid-100 clearfix" id="header"> 
+            <div class="grid-50 tablet-grid-50 clearfix grid-parent" id="header"> 
 
                 <img src="logo.png" id="logo"> 
 
@@ -40,71 +43,64 @@
 
             </div>
 
-            <hr />
-
-        <div id="content" class="grid-container">
-
-
-                <div class="grid-75 tablet-grid-70">
-
-                    <h1>Herzlich  willkommen.</h3>
-
-                    <div class="block">
-
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-
-                    </div>
-
-                </div>
+            <div class="grid-50 tablet-grid-50 hide-on-mobile" style="text-align: right">
+                
 
 
+                    <div style="display: inline-block; width: 90px; height: 90px; margin: 60px 20px 60px 0; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-038.jpg');">        </div>
+                    <div style="display: inline-block; width: 90px; height: 90px; margin: 60px 20px 60px 0; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-039.jpg');">        </div>
+                    <div style="display: inline-block; width: 90px; height: 90px; margin: 60px 60px 60px 0; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-040.jpg');">        </div>
 
-
-                <div class="grid-25 tablet-grid-30">
-
-                    <h2>Termine</h2>
-
-                    <div class="block">
-
-
-                        <p>
-                        [% FOREACH x IN [ 1,2,3,4,5 ] %] 
-                            <strong>[% char %] Titel des Termines[% IF x == 3 %], und mehrzeilig, passt auch ins Konzept[% END %]</strong><br />
-                            <small> So, 6, März 2014, 9.30 Uhr</small><br />
-                            <br />
-                        [% END %]
-                        </p>
-
-                        
-
-                    </div>
-
-                    <h2>Schaukasten</h2>
-
-                    <div class="block">
-
-                        <img src="/img/schaukasten.jpg" />
-
-                    </div>
-
-
-                </div>
 
             </div>
+        
+        </div>
 
-            
-                    <hr />            
+        <div class="grid-container">
+
+            <ul id="menu">
+
+
+                <li><a href="">Startseite</a></li>
+                <li><a href="">Aktuelles</a><ul>
+                        <li><a href="">Kurzmeldungen</a></li>
+                        <li><a href="">Berichte</a></li>
+                        <li><a href="">Termine</a></li>
+                        <li><a href="">Links</a></li>
+                    </ul></li>
+                <li><a href="">Unser Bezirk</a>
+                    <ul>
+                        <li><a href="">Daten & Fakten</a></li>
+                        <li><a href="">Gruppen</a></li>
+                        <li><a href="">Einrichtungen</a></li>
+                        <li><a href="">Musik</a></li>
+                        <li><a href="">Chronik</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Unsere Gemeinden</a></li>
+                <li><a href="">Seelsorge</a></li>
+
+            </ul>
+
+        </div>
+
+        [% END %]
+
+
+        [% footer = BLOCK %]
+        
+        <hr />            
 
         <div id="footer" class="grid-container" >
                 
 
-                    <div class="grid-40 tablet-grid-40">
+                    <div class="grid-45 tablet-grid-70">
                         
                         <h3>Kurzmeldungen</h3>
 
                         <div class="block grid-parent clearfix">
 
-                            [% FOREACH x IN [ 40,80,120,43,20 ] %]
+                            [% FOREACH x IN [ 40,80,120 ] %]
 
 
                             <div class="grid-20 tablet-grid-20 grid-parent"> 
@@ -113,12 +109,12 @@
             
                             </div>
 
-                            <div class="grid-70 tablet-grid-80">
+                            <div class="grid-80 tablet-grid-80">
    
-                                <a href="" style="text-decoration: none; padding: 0 0 10px 0; line-height: 17px; font-size: 12px">
+                                <div class="article">
+                                    <strong>[% "Anmeldung zum IKT gestartet und weitere Informtionen finden sie online auf " | truncate(x) %]</strong><br /> 
                                     <small>Fr, 09. März 2014</small><br />
-                                    <strong>[% "Anmeldung zum IKT gestartet und weitere Informtionen finden sie online auf " | truncate(x) %]</strong> 
-                                </a>
+                                </div>
             
                             </div>
 
@@ -134,32 +130,7 @@
 
                     </div>
 
-                    <div class="grid-30 tablet-grid-30">
-
-                        <h3>Projekte in Nordrhein-Westfalen</h3>
-
-                        <div class="block">
-
-                            <p>Weitere Projekte der Neuapostolischen Kirche Nordrhein-Westfalen</p>
-                            <p>&nbsp;</p>
-                            <ul>
-                
-                                <li><a href="">Gemeindesuche NRW</a></li>
-                                <li><a href="">ESRA/NAK-Dienste</a></li>
-                                <li><a href="">Jugend Online</a></li>
-                                <li><a href="">Senioren NRW</a></li>
-                                <li><a href="">Fortbildungsprogramm</a></li>
-                                <li><a href="">GZD Reservierung</a></li>
-                                <li><a href="">NAK Karitativ</a></li>
-
-
-                            </ul>
-
-
-                        </div>
-
-                    </div>
-
+               
                     <div class="grid-30 tablet-grid-30">
 
                         <h3>Die Neuapostolische Kirche</h3>
@@ -190,29 +161,267 @@
 
                     </div>
 
+                     <div class="grid-25 tablet-grid-35">
+
+                        <h3>Projekte in Nordrhein-Westfalen</h3>
+
+                        <div class="block">
+
+                            <p>Projekte der Neuapostolischen Kirche Nordrhein-Westfalen</p>
+                            <ul>
+                
+                                <li><a href="">Gemeindesuche NRW</a></li>
+                                <li><a href="">ESRA/NAK-Dienste</a></li>
+                                <li><a href="">Jugend Online</a></li>
+                                <li><a href="">Senioren NRW</a></li>
+                                <li><a href="">Fortbildungsprogramm</a></li>
+                                <li><a href="">GZD Reservierung</a></li>
+                                <li><a href="">NAK Karitativ</a></li>
+
+
+                            </ul>
+
+
+                        </div>
+
+                    </div>
+
+
                 </div>
 
 
                 <hr class="grey" />
 
+                    <p style="text-align: center;"><small>&copy; 2001 – 2014 Neuapostolische Kirche Nordrhein-Westfalen</small></p>
+
             </div>
         </div>
 
+        [% END %]
 
-        <h3>Info</h3>
 
+        [% header %]
+
+
+        <div id="content" class="grid-container">
+
+                <div class="grid-75 tablet-grid-70">
+
+                    <h1>Herzlich  willkommen.</h3>
+
+                    <div class="block grid-parent clearfix">
+
+                        <div class="grid-50 tablet-grid-70">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                            
+                            <p>No sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                        </div>
+
+                        <div class="grid-50 tablet-grid-30">
+                            <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-033.jpg');">        </div>
+                        </div>
+
+                    </div>
+
+
+                        <h2>Berichte</h2>
+
+                        <div class="block grid-parent clearfix">
+
+                            [% FOREACH x IN [ 99,100,101,102,103 ] %]
+
+                            <div class="grid-30 tablet-grid-30 grid-parent"> 
+
+                                <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-[% x | format("%03d") %].jpg');">        </div>
+            
+                            </div>
+
+                            <div class="grid-70 tablet-grid-70">
+   
+                                <div class="article">
+                                    
+                                    <h3>Titel des Beitrages</h3>
+                                    <p><small>Fr, 09. März 2014</small><br />
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet </p>
+                                </div>
+            
+                            </div>
+
+
+                            <div class="clearfix" > </div>
+
+                            [% END %]
+
+
+
+                        </div>
+
+
+                </div>
+
+
+                <div class="grid-25 tablet-grid-30">
+
+                    <h2>Termine</h2>
+
+                    <div class="block">
+
+
+                        <p>
+                        [% FOREACH x IN [ 1,2,3,4,5 ] %] 
+                            <strong>[% char %] Titel des Termines[% IF x == 3 %], und mehrzeilig, passt auch ins Konzept[% END %]</strong><br />
+                            <small> So, 6, März 2014, 9.30 Uhr</small><br />
+                            <br />
+                        [% END %]
+                        </p>
+
+                        
+
+                    </div>
+
+                    <h2>Schaukasten</h2>
+
+                    <div class="block">
+
+                        <img src="/img/schaukasten.jpg" />
+
+                    </div>
+
+
+                    <h2>Banner</h2>
+
+                    <div class="block">
+
+                            <div style="width: 100%; margin-bottom: 10px; padding-bottom: 40%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-004.jpg');">  </div>
+                            <div style="width: 100%; margin-bottom: 10px; padding-bottom: 40%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-007.jpg');">  </div>
+                            <div style="width: 100%; margin-bottom: 10px; padding-bottom: 40%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-009.jpg');">  </div>
+  
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+       [% footer %]
+ 
+
+        
+        <h3 class="info">Beitrag</h3>
+
+        
+        [% header %]
+
+            <div id="content" class="grid-container">
+
+                <div class="prefix-10 grid-65 tablet-grid-70">
+
+
+
+                            <div style="width: 100%; margin-bottom: 10px; padding-bottom: 50%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-075.jpg');">        </div>
+
+
+                        <h2>Der Titel des Beitrags</h2>
+                        <div class="block blockin">
+                            <small>Freitag, 21. März 2014 | Kategorie Gemeinde, Bezirk</small>
+                        </div>
+                        
+
+                        <div class="article">
+
+                            <p><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a</strong></p>
+
+                            <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
+                            <p>Dapibus Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus,</p>
+                            <p>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus,</p>
+                            <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus,</p>
+
+
+                        </div>
+
+
+                        
+                        [% FOREACH x IN [140..159] %]
+
+                            <div class="grid-20 tablet-grid-20 grid-parent"> 
+
+                                <div style="width: 90%; margin-bottom: 10px; margin-right: 10px;  padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-[% x | format("%03d") %].jpg');">        </div>
+            
+                            </div>
+
+                        [% END %]
+
+
+
+                </div>
+
+
+                <div class="grid-25 tablet-grid-30">
+
+                    <h2>Archiv</h2>
+
+                    <div class="block">
+
+
+                        <ul class="list">
+                        [% FOREACH i IN ['Aktuelle',2014,2013,2012,2011,2010 ] %]
+
+                            <li><a href="" class="active">[% char %] [% i %]</a></li>
+
+                        [% END %]
+                        </ul>
+
+                       
+                        
+
+                    </div>
+
+                    <h2>Kategorie</h2>
+
+                    <div class="block">
+
+                    
+                        <ul class="list">
+                        [% FOREACH i IN ['Alle','Gemeinde','Bezirk','Gebietskirche','International'] %]
+
+                            <li><a href="" class="active">[% char %] [% i %]</a></li>
+
+                        [% END %]
+                        </ul>
+
+                    </div>
+
+
+                    <h2></h2>
+
+
+
+
+                </div>
+
+            </div>
+
+       [% footer %]
+ 
+        
+        <h3 class="info">Info</h3>
+
+        [% header %]
+
+
+        [% footer %]
 
 
         
-        <h1>Bezirk</h1>
+        <h1 class="info">Bezirk</h1>
 
-        <h3>Startseite</h3>
-
-
-        <h3>Bericht</h3>
+        <h3 class="info">Startseite</h3>
 
 
-        <h3>Info</h3>
+        <h3 class="info">Bericht</h3>
+
+
+        <h3 class="info">Info</h3>
 
 
 
