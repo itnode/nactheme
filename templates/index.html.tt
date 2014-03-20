@@ -14,7 +14,7 @@
     </head>
     <body>
 
-    [% SET char = "◻" # "◼" %]
+    [% SET char = "■" %]
 
 
         <div id="navbar">
@@ -33,7 +33,28 @@
 
 
         </div>
-            
+           
+          [% menu_vertical = BLOCK %]
+
+            <ul id="menu-vertical">
+
+
+                <li><a href="">[% char %] Startseite</a></li>
+                <li class="active"><a href="">[% char %] Aktuelles</a><ul>
+                        <li><a href="">Kurzmeldungen</a></li>
+                        <li class="active"><a href="">Berichte</a></li>
+                        <li><a href="">Termine</a></li>
+                        <li><a href="">Links</a></li>
+                    </ul></li>
+                <li><a href="">[% char %] Unser Bezirk</a></li>
+                <li><a href="">[% char %] Unsere Gemeinden</a></li>
+                <li><a href="">[% char %] Seelsorge</a></li>
+
+            </ul>
+
+        [% END %]
+
+ 
 
         [% banner = BLOCK %]
 
@@ -169,7 +190,10 @@
 
         [% footer = BLOCK %]
         
-        <hr />            
+
+        <div class="grid-container">
+            <hr />
+        </div>
 
         <div id="footer" class="grid-container" >
                 
@@ -270,16 +294,20 @@
                 </div>
 
 
-                <hr class="grey" />
+            </div>
+        </div>
 
+        
+        <div class="grid-container">
+        
+                    <hr class="grey" />
                     <p style="text-align: center;"><small>&copy; 2001 – 2014 Neuapostolische Kirche Nordrhein-Westfalen</small></p>
 
-            </div>
         </div>
 
         [% END %]
 
-        <a name="gk_start"> </a>
+        <a name="gk_start">&nbsp; </a>
  
         [% header %]
 
@@ -368,12 +396,12 @@
                 </div>
 
             </div>
-
+        
             
        [% footer %]
  
 
-        <a name="gk_article"> </a>
+        <a name="gk_article"> &nbsp;</a>
         
         
         [% header %]
@@ -383,8 +411,7 @@
                 <div class="prefix-10 grid-65 tablet-grid-70">
 
 
-
-                            <div style="width: 100%; margin-bottom: 10px; padding-bottom: 50%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-075.jpg');">        </div>
+                        <div style="width: 100%; margin-bottom: 10px; padding-bottom: 50%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-075.jpg');">        </div>
 
 
                         <h2>Der Titel des Beitrags</h2>
@@ -444,10 +471,137 @@
        [% footer %]
  
 
-        <a name="gk_info"> </a>
+        <a name="gk_info"> &nbsp;</a>
 
 
         [% header %]
+
+            <div class="grid-container" id="content">
+
+                    <div class="grid-20 tablet-grid-20">
+
+                        [% menu_vertical %]
+
+                        [% banner %]
+
+                    </div>
+
+                    <div class="grid-70 tablet-grid-75">
+
+                        
+                        <h1>Seite mit Information über alles.</h3>
+
+                        <div class="block grid-parent clearfix">
+
+                            <div class="grid-60 tablet-grid-70 grid-parent">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                            
+                            </div>
+
+                            <div class="grid-40 tablet-grid-30">
+                                <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-033.jpg');">        </div>
+                            </div>
+
+                        </div>
+
+                        
+
+                        <h2>Zwischenüberschrift</h3>
+
+                        <div class="block clearfix grid-parent">
+
+                            <div class="grid-40 tablet-grid-30">
+                                <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-032.jpg');">        </div>
+                            </div>
+
+                            <div class="grid-60 tablet-grid-70 grid-parent">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                            
+                            </div>
+
+
+
+                        </div>
+
+
+                        <h2>Zwischenüberschrift</h3>
+
+                        <div class="block clearfix grid-parent">
+
+                            <div class="grid-60 tablet-grid-70 grid-parent">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                            
+                            </div>
+
+                            <div class="grid-40 tablet-grid-30">
+                                <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-032.jpg');">        </div>
+                            </div>
+
+
+
+
+                        </div>
+
+                        <h2>Tabelle</h2>
+
+
+                        <table class="data">
+                        <tr>
+                            <th>Tabellenüberschrift 1</th>
+                            <th>Tabellenüberschrift 2</th>
+                            <th>Tabellenüberschrift 3</th>
+                            <th>Tabellenüberschrift 4</th>
+                        </tr>
+                        <tr>
+                            <td>1. Eintrag in der ersten Zeile</td>
+                            <td>2. Eintrag in der ersten Zeile</td>
+                            <td>3. Eintrag in der ersten Zeile</td>
+                            <td>4. Eintrag in der ersten Zeile</td>
+                        </tr>
+                        <tr>
+                            <td>1. Eintrag</td>
+                            <td>2. Eintrag</td>
+                            <td>3. Eintrag</td>
+                            <td>4. Eintrag</td>
+                        </tr>
+                        <tr>
+                            <td>1. Eintrag in der letzten Zeile</td>
+                            <td>2. Eintrag in der letzten Zeile</td>
+                            <td>3. Eintrag in der letzten Zeile</td>
+                            <td>4. Eintrag in der letzten Zeile</td>
+                        </tr>
+                        </table>
+
+
+                        <h2>Liste</h2>
+
+
+                    <ul>
+                    <li>Um ein triviales Beispiel zu nehmen.</li>
+                    <li>Aber wer hat irgend ein Recht, einen Menschen zu 
+                    tadeln.</li>
+                    <li>Der den Schmerz an sich liebt.</li>
+                    </ul>
+
+
+                    <h2>Zitat</h2>
+                        
+                    <blockquote>
+                        Sie hätten noch ins Boot springen können, aber der 
+                        Reisende hob ein schweres, geknotetes Tau vom Boden, 
+                        drohte ihnen damit und hielt sie dadurch von dem 
+                        Sprunge ab. In den letzten Jahrzehnten ist das 
+                        Interesse an Hungerkünstlern sehr zurückgegangen. 
+                        Aber sie überwanden sich, umdrängten den Käfig und 
+                        wollten sich gar nicht fortrühren.
+                            <cite>– Julius Cäsar</cite>
+                        </blockquote>
+
+
+                 </div>
+              
+            </div>
+
 
 
         [% footer %]
@@ -482,24 +636,25 @@
                     <div style="display: inline-block; width: 90px; height: 90px; margin: 60px 60px 60px 0; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-040.jpg');">        </div>
 
             </div>
+       
+
+
         
         </div>
-
-        <hr />
-
+         
         <div class="grid-container">
-
-       </div>
+            <hr />
+        </div>
 
         [% END %]
 
 
         [% footer_district = BLOCK %]
         
-        <hr />            
 
-        <div id="footer" class="grid-container" >
+                <div id="footer" class="grid-container" >
                 
+                    <hr />            
 
              
                
@@ -575,42 +730,24 @@
                     </div>
 
 
+                  
                 </div>
 
+                <div class="grid-container">
 
-                <hr class="grey" />
+                    <hr class="grey" />
 
                     <p style="text-align: center;"><small>&copy; 2001 – 2014 Neuapostolische Kirche Nordrhein-Westfalen</small></p>
 
-            </div>
-        </div>
+                </div>
+
 
         [% END %]
 
-        [% menu_vertical = BLOCK %]
-
-            <ul id="menu-vertical">
+      
 
 
-                <li><a href="">[% char %] Startseite</a></li>
-                <li class="active"><a href="">[% char %] Aktuelles</a><ul>
-                        <li><a href="">Kurzmeldungen</a></li>
-                        <li class="active"><a href="">Berichte</a></li>
-                        <li><a href="">Termine</a></li>
-                        <li><a href="">Links</a></li>
-                    </ul></li>
-                <li><a href="">[% char %] Unser Bezirk</a></li>
-                <li><a href="">[% char %] Unsere Gemeinden</a></li>
-                <li><a href="">[% char %] Seelsorge</a></li>
-
-            </ul>
-
-        [% END %]
-
-
-
-
-        <a name="district_start"> </a>
+        <a name="district_start">&nbsp;</a>
 
 
         [% header_district %]
@@ -620,7 +757,6 @@
 
             <div class="grid-20 tablet-grid-25">
            
-
 
 
                       [% menu_vertical %]
@@ -736,7 +872,7 @@
         [% footer_district %]
 
     
-        <a name="district_article"> </a>
+        <a name="district_article">&nbsp;</a>
 
 
         [% header_district %]
@@ -814,7 +950,7 @@
 
 
 
-        <a name="district_info"> </a>
+        <a name="district_info">&nbsp;</a>
 
 
         [% header_district %]
@@ -885,6 +1021,61 @@
 
 
                         </div>
+
+                        <h2>Tabelle</h2>
+
+
+                        <table class="data">
+                        <tr>
+                            <th>Tabellenüberschrift 1</th>
+                            <th>Tabellenüberschrift 2</th>
+                            <th>Tabellenüberschrift 3</th>
+                            <th>Tabellenüberschrift 4</th>
+                        </tr>
+                        <tr>
+                            <td>1. Eintrag in der ersten Zeile</td>
+                            <td>2. Eintrag in der ersten Zeile</td>
+                            <td>3. Eintrag in der ersten Zeile</td>
+                            <td>4. Eintrag in der ersten Zeile</td>
+                        </tr>
+                        <tr>
+                            <td>1. Eintrag</td>
+                            <td>2. Eintrag</td>
+                            <td>3. Eintrag</td>
+                            <td>4. Eintrag</td>
+                        </tr>
+                        <tr>
+                            <td>1. Eintrag in der letzten Zeile</td>
+                            <td>2. Eintrag in der letzten Zeile</td>
+                            <td>3. Eintrag in der letzten Zeile</td>
+                            <td>4. Eintrag in der letzten Zeile</td>
+                        </tr>
+                        </table>
+
+
+                        <h2>Liste</h2>
+
+
+                    <ul>
+                    <li>Um ein triviales Beispiel zu nehmen.</li>
+                    <li>Aber wer hat irgend ein Recht, einen Menschen zu 
+                    tadeln.</li>
+                    <li>Der den Schmerz an sich liebt.</li>
+                    </ul>
+
+
+                    <h2>Zitat</h2>
+                        
+                    <blockquote>
+                        Sie hätten noch ins Boot springen können, aber der 
+                        Reisende hob ein schweres, geknotetes Tau vom Boden, 
+                        drohte ihnen damit und hielt sie dadurch von dem 
+                        Sprunge ab. In den letzten Jahrzehnten ist das 
+                        Interesse an Hungerkünstlern sehr zurückgegangen. 
+                        Aber sie überwanden sich, umdrängten den Käfig und 
+                        wollten sich gar nicht fortrühren.
+                            <cite>– Julius Cäsar</cite>
+                        </blockquote>
 
 
                  </div>

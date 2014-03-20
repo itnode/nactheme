@@ -110,6 +110,12 @@ body {
     font-family: 'Open Sans';
  }
 
+a[name] {
+   
+    display: block;
+}
+
+
 a {
 
     color: #5793C9;
@@ -269,6 +275,7 @@ small {
 
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 
 .block ul li {
@@ -309,6 +316,7 @@ img {
     background: #5793C9;
     margin-bottom: 30px;
     font-size: 0;
+    padding: 0;
 }
 
 #menu li {
@@ -337,6 +345,9 @@ img {
 #menu li ul {
 
     display: none;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 150px;
 }
 
 #menu li:hover ul {
@@ -351,6 +362,7 @@ img {
 
 #menu li ul li a {
 
+    display: block;
     font-size: 13px;
     border: 0 none;
 }
@@ -399,7 +411,9 @@ h2.info {
 
 #menu-vertical {
 
-    border: 0;;
+    border: 0;
+    padding: 0;
+    margin: 0;
     margin-bottom: 30px;
     font-size: 0;
 }
@@ -476,15 +490,16 @@ h2.info {
 
     position: fixed;
     top: 0;
-    right: 0;
     left: 0;
     padding: 10px; 
     background: #fff;
     z-index: 9999;
-}
+    width: 150px;
+   }
 
 #navbar a {
 
+    display: block;
     font-size: 13px;
 }
 
@@ -499,4 +514,62 @@ h2.info {
 
     font-size: 13px;
     font-weight: 500;
+}
+
+
+table {
+    
+    border-collapse:collapse;
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+
+table th {
+
+    text-align: left;
+    border-bottom: 1px solid #5793C9;
+    font-weight: 500;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+
+table td {
+
+    font-weight: 400;
+    padding: 5px 10px;
+    font-size: 13px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+ul {
+
+    list-style: square;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+ul li {
+
+    font-size: 13px;
+    line-height: 24px;
+}
+
+#content blockquote {
+
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 10px;
+    border-left: 1px solid #EEE;    
+    margin-bottom: 10px;
+
+}
+
+#content cite {
+    display: block; 
+    font-weight: 300;
+    font-style: normal;
 }
