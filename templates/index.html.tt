@@ -7,10 +7,10 @@
 
         <meta name="viewport" content="width=device-width,   maximum-scale=1.0" />
         
-        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700|Open+Sans:400,700,600,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/unsemantic.css" type="text/css"  />
         <link rel="stylesheet" href="/style.css" type="text/css"  />
-                 
+        <link rel="stylesheet" href="/fonts/demo.css" type="text/css"  />
+                  
     </head>
     <body>
 
@@ -18,6 +18,12 @@
 
 
         <div id="navbar">
+
+            <strong>NAKI</strong>
+
+            <a href="#i_start">Variante I</a>
+            <a href="#i_article">Variante II</a>
+            <a href="#i_info">Variante III</a>
 
             <strong>NAK-NRW</strong>
 
@@ -54,6 +60,39 @@
 
         [% END %]
 
+        
+        [% menu_vertical_naki = BLOCK %]
+        
+
+            <ul id="menu-vertical">
+
+                <li><a href="">[% char %] Startseite</a></li>
+                <li class="active"><a href=""> [% char %] Aktuell</a>
+                    <ul>
+                        <li><a href="">Kurzmeldungen</a></li>
+                        <li class="active"><a href="">Berichte</a></li>
+                        <li><a href="">Termine</a></li>
+                        <li><a href="">Links</a></li>
+                    </ul></li>
+                <li><a href="">[% char %] Portrait</a></li>
+                <li><a href="">[% char %] Lehre</a></li>
+                <li><a href="">[% char %] Kirche</a></li>
+                <li><a href="">[% char %] Gemeinden</a></li>
+                <li><a href="">[% char %] Medien</a></li>
+
+            </ul>
+
+            <h2>Wort des Monats</h2>
+
+                    <div class="block">
+                    
+                        <p><strong>Dienen heißt: Zeuge sein</strong><br />
+                        <p>Der Herr zog einst mit seinen Jüngern durch Galiläa. Dort lehrte er seine Jünger, dass er leiden …</p>
+
+
+                    </div>
+
+        [% END %]
  
 
         [% banner = BLOCK %]
@@ -137,9 +176,9 @@
 
             <div class="grid-50 tablet-grid-50 clearfix grid-parent" id="header"> 
 
-                <img src="logo.png" id="logo"> 
+                <img src="logo.png" id="logo" style="padding: 40px 20px 40px 40px"> 
 
-                <h1>Neuapostolische Kirche</h1>
+                <h1 style="margin-top: 90px">Neuapostolische Kirche</h1>
                 <h2>Nordrhein-Westfalen</h2>
 
             </div>
@@ -148,9 +187,9 @@
                 
 
 
-                    <div style="display: inline-block; width: 90px; height: 90px; margin: 60px 20px 60px 0; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-038.jpg');">        </div>
-                    <div style="display: inline-block; width: 90px; height: 90px; margin: 60px 20px 60px 0; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-039.jpg');">        </div>
-                    <div style="display: inline-block; width: 90px; height: 90px; margin: 60px 60px 60px 0; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-040.jpg');">        </div>
+                    <div style="display: inline-block; width: 90px; height: 90px; margin: 40px 20px 40px 0; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-038.jpg');">        </div>
+                    <div style="display: inline-block; width: 90px; height: 90px; margin: 40px 20px 40px 0; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-039.jpg');">        </div>
+                    <div style="display: inline-block; width: 90px; height: 90px; margin: 40px 40px 40px 0; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-040.jpg');">        </div>
 
 
             </div>
@@ -187,6 +226,90 @@
 
         [% END %]
 
+        [% header_naki = BLOCK %]
+
+        <div class="grid-container">
+
+            <ul id="toolbar">
+                <li><a href="">[% char %] Kontakt</a></li>
+                <li><a href="">[% char %] Impressum</a><li>
+                <li><a href="">[% char %] Sitemap</a></li>
+                <li><input type="search" placeholder="Suchen …" style="padding: 1px 3px"></li>
+
+            </ul>
+            <hr class="grey" />
+
+            <div class="grid-50 tablet-grid-50 clearfix grid-parent" id="header"> 
+
+                <img src="logo.png" id="logo" style="padding: 40px 20px 40px 40px";> 
+
+                <h1 style="margin-top: 90px">Neuapostolische Kirche</h1>
+                <h2>International</h2>
+
+            </div>
+
+            <div class="grid-50 tablet-grid-50 hide-on-mobile" style="text-align: right">
+                
+
+
+                    <div style="display: inline-block; width: 90px; height: 90px; margin: 40px 20px 40px 0; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-038.jpg');">        </div>
+                    <div style="display: inline-block; width: 90px; height: 90px; margin: 40px 20px 40px 0; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-039.jpg');">        </div>
+                    <div style="display: inline-block; width: 90px; height: 90px; margin: 40px 40px 40px 0; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-040.jpg');">        </div>
+
+
+            </div>
+     
+        </div>
+
+        <div class="grid-container">
+
+            <hr />
+        
+        </div>
+
+       
+        [% END %]
+
+        [% header_naki2 = BLOCK %]
+
+        <div class="grid-container">
+
+                     <hr class="grey" />
+
+            <div class="grid-50 tablet-grid-50 clearfix grid-parent" id="header"> 
+
+                <img src="logo.png" id="logo" style="padding: 20px";> 
+
+                <h1 style="margin-top: 70px">Neuapostolische Kirche</h1>
+                <h2>International</h2>
+
+            </div>
+
+            <div class="grid-50 tablet-grid-50 hide-on-mobile" style="text-align: right">
+                
+                <ul id="toolbar" style="padding: 20px 20px 20px 20px">
+                    <li><a href="">[% char %] Kontakt</a></li>
+                    <li><a href="">[% char %] Impressum</a><li>
+                    <li><a href="">[% char %] Sitemap</a></li>
+                    <li><input type="search" placeholder="Suchen …" style="padding: 1px 3px"></li>
+
+                </ul>
+
+
+
+
+            </div>
+     
+        </div>
+
+        <div class="grid-container">
+
+            <hr />
+        
+        </div>
+
+       
+        [% END %]
 
         [% footer = BLOCK %]
         
@@ -306,6 +429,342 @@
         </div>
 
         [% END %]
+
+        <a name="i_start">&nbsp; </a>
+ 
+        [% header_naki %]
+
+        <div class="grid-container" id="content">
+
+            <div class="grid-20 tablet-grid-25">
+           
+                [% menu_vertical_naki %]
+
+                 
+            </div>
+
+ 
+            <div class="grid-55 tablet-grid-50">
+
+
+                <h1>Herzlich  willkommen.</h3>
+
+                <div class="block grid-parent clearfix">
+
+                        <div class="grid-60 tablet-grid-70 grid-parent">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                            
+                        </div>
+
+                        <div class="grid-40 tablet-grid-30">
+                            <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-033.jpg');">        </div>
+                        </div>
+
+                </div>
+
+
+                <h2>Berichte</h2>
+
+                <div class="block grid-parent clearfix">
+
+                    [% FOREACH x IN [ 99,100,101,102,103 ] %]
+
+                    <div class="grid-30 tablet-grid-25 grid-parent"> 
+
+                        <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-[% x | format("%03d") %].jpg');">        </div>
+
+                    </div>
+
+                    <div class="grid-70 tablet-grid-75">
+
+                        <div class="article">
+                            
+                            <h3>Titel des Beitrages</h3>
+                            <p><small>Fr, 09. März 2014</small><br />
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="clearfix" > </div>
+
+                    [% END %]
+
+
+
+                </div>
+
+
+
+            </div>
+
+            <div class="grid-25 tablet-grid-25">
+
+
+                   <h2>nac.today</h2>
+
+                   <div class="block grid-parent clearfix">
+
+                            [% FOREACH x IN [ 40,80,120,55 ] %]
+
+                            <div class="grid-20 tablet-grid-20 grid-parent"> 
+
+                                <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-[% x | format("%03d") %].jpg');">        </div>
+            
+                            </div>
+
+                            <div class="grid-80 tablet-grid-80">
+   
+                                <div class="article" style="padding-bottom: 10px">
+                                    <strong>[% "Anmeldung zum IKT gestartet und weitere Informtionen finden sie online auf " | truncate(x) %]</strong><br /> 
+                                    <small>Fr, 09. März 2014</small><br />
+                                </div>
+            
+                            </div>
+
+
+                            <div class="clearfix" > </div>
+
+                            [% END %]
+
+
+
+                        </div>
+
+              
+                    <h2>Schaukasten</h2>
+
+                    <div class="block">
+
+                        <img src="/img/schaukasten.jpg" />
+
+                    </div>
+
+
+                
+
+            </div>
+
+        </div>
+
+        [% footer_district %]
+
+    
+        <a name="i_article">&nbsp; </a>
+ 
+        [% header_naki2 %]
+
+        <div class="grid-container" id="content">
+
+            <div class="grid-20 tablet-grid-25">
+           
+                [% menu_vertical_naki %]
+
+            </div>
+
+ 
+            <div class="grid-55 tablet-grid-50">
+
+
+                <h1>Herzlich  willkommen.</h3>
+
+                <div class="block grid-parent clearfix">
+
+                        <div class="grid-60 tablet-grid-70 grid-parent">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                            
+                        </div>
+
+                        <div class="grid-40 tablet-grid-30">
+                            <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-033.jpg');">        </div>
+                        </div>
+
+                </div>
+
+
+                <h2>Berichte</h2>
+
+                <div class="block grid-parent clearfix">
+
+                    [% FOREACH x IN [ 99,100,101,102,103 ] %]
+
+                    <div class="grid-30 tablet-grid-25 grid-parent"> 
+
+                        <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-[% x | format("%03d") %].jpg');">        </div>
+
+                    </div>
+
+                    <div class="grid-70 tablet-grid-75">
+
+                        <div class="article">
+                            
+                            <h3>Titel des Beitrages</h3>
+                            <p><small>Fr, 09. März 2014</small><br />
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="clearfix" > </div>
+
+                    [% END %]
+
+
+
+                </div>
+
+
+
+            </div>
+
+            <div class="grid-25 tablet-grid-25">
+
+
+                   <h2>Termine</h2>
+
+                    <div class="block">
+
+
+                        <p>
+                        [% FOREACH x IN [ 1,2,3,4,5 ] %] 
+                            <strong>[% char %] Titel des Termines[% IF x == 3 %], und mehrzeilig, passt auch ins Konzept[% END %]</strong><br />
+                            <small> So, 6, März 2014, 9.30 Uhr</small><br />
+                            <br />
+                        [% END %]
+                        </p>
+
+                        
+
+                    </div>
+
+                    <h2>Schaukasten</h2>
+
+                    <div class="block">
+
+                        <img src="/img/schaukasten.jpg" />
+
+                    </div>
+
+
+                
+
+            </div>
+
+        </div>
+
+        [% footer_district %]
+
+        <a name="i_info">&nbsp; </a>
+ 
+        [% header_naki2 %]
+
+        <div class="grid-container" id="content">
+
+            <div class="grid-20 tablet-grid-25">
+           
+                [% menu_vertical_naki %]
+            
+            </div>
+
+ 
+            <div class="grid-55 tablet-grid-50">
+
+
+                <h1>Herzlich  willkommen.</h3>
+
+                <div class="block grid-parent clearfix">
+
+                        <div class="grid-60 tablet-grid-70 grid-parent">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                            
+                        </div>
+
+                        <div class="grid-40 tablet-grid-30">
+                            <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-033.jpg');">        </div>
+                        </div>
+
+                </div>
+
+
+                <h2>Berichte</h2>
+
+                <div class="block grid-parent clearfix">
+
+                    [% FOREACH x IN [ 99,100,101,102,103 ] %]
+
+                    <div class="grid-30 tablet-grid-25 grid-parent"> 
+
+                        <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-[% x | format("%03d") %].jpg');">        </div>
+
+                    </div>
+
+                    <div class="grid-70 tablet-grid-75">
+
+                        <div class="article">
+                            
+                            <h3>Titel des Beitrages</h3>
+                            <p><small>Fr, 09. März 2014</small><br />
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="clearfix" > </div>
+
+                    [% END %]
+
+
+
+                </div>
+
+
+
+            </div>
+
+            <div class="grid-25 tablet-grid-25">
+
+
+                   <h2>Termine</h2>
+
+                    <div class="block">
+
+
+                        <p>
+                        [% FOREACH x IN [ 1,2,3,4,5 ] %] 
+                            <strong>[% char %] Titel des Termines[% IF x == 3 %], und mehrzeilig, passt auch ins Konzept[% END %]</strong><br />
+                            <small> So, 6, März 2014, 9.30 Uhr</small><br />
+                            <br />
+                        [% END %]
+                        </p>
+
+                        
+
+                    </div>
+
+                    <h2>Schaukasten</h2>
+
+                    <div class="block">
+
+                        <img src="/img/schaukasten.jpg" />
+
+                    </div>
+
+
+                
+
+            </div>
+
+        </div>
+
+        [% footer_district %]
+
+
+    
+
+
 
         <a name="gk_start">&nbsp; </a>
  
@@ -621,9 +1080,9 @@
 
             <div class="grid-50 tablet-grid-50 clearfix grid-parent" id="header"> 
 
-                <img src="logo.png" id="logo"> 
+                <img src="logo.png" id="logo" style="padding: 30px 20px 30px 30px"> 
 
-                <h1>Neuapostolische Kirche</h1>
+                <h1 style="margin-top:80px">Neuapostolische Kirche</h1>
                 <h2>Bezirk Dortmund-Süd</h2>
 
             </div>
@@ -631,9 +1090,9 @@
             <div class="grid-50 tablet-grid-50 hide-on-mobile" style="text-align: right">
 
 
-                    <div style="display: inline-block; width: 90px; height: 90px; margin: 60px 20px 60px 0; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-038.jpg');">        </div>
-                    <div style="display: inline-block; width: 90px; height: 90px; margin: 60px 20px 60px 0; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-039.jpg');">        </div>
-                    <div style="display: inline-block; width: 90px; height: 90px; margin: 60px 60px 60px 0; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-040.jpg');">        </div>
+                    <div style="display: inline-block; width: 90px; height: 90px; margin: 30px 20px 30px 0; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-038.jpg');">        </div>
+                    <div style="display: inline-block; width: 90px; height: 90px; margin: 30px 20px 30px 0; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-039.jpg');">        </div>
+                    <div style="display: inline-block; width: 90px; height: 90px; margin: 30px 60px 30px 0; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-040.jpg');">        </div>
 
             </div>
        
