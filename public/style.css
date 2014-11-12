@@ -28,8 +28,9 @@ body {
 
     padding: 0;
     margin: 0;
-    font-family: 'Arial';
- }
+    font-family: 'HelveticaNeue';
+    font-weight: 300;
+}
 
 a[name] {
    
@@ -166,7 +167,7 @@ h3 {
 
 strong {
 
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     color: #333;
 
@@ -183,7 +184,7 @@ small {
 
     border-left: 1px solid #d6d6d6;
     padding: 10px 30px 10px 14px;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 20px;
     font-weight: 300;
     color: #000;
@@ -293,7 +294,7 @@ img {
 #menu li ul li a {
 
     display: block;
-    font-size: 13px;
+    font-size: 14px;
     border: 0 none;
 }
 
@@ -311,14 +312,14 @@ img {
 
 .article p strong {
 
-    font-size: 13.2px;
+    font-size: 14px;
     line-height: 20px;
-    font-weight: 500;
+    font-weight: 600;
  }
 
 .article p {
 
-    font-size: 13.2px;
+    font-size: 14px;
     line-height: 20px;
     font-weight: 300;
     margin-bottom: 10px;
@@ -379,7 +380,7 @@ h2.info {
 #menu-vertical li.active a {
 
    color: #5793C9;
-   padding-left: 13px;
+   padding-left: 14px;
 
 }
 
@@ -419,7 +420,7 @@ h2.info {
 #navbar {
 
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
     padding: 10px; 
     background: #fff;
@@ -430,7 +431,7 @@ h2.info {
 #navbar a {
 
     display: block;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 #navbar a:focus,
@@ -442,7 +443,7 @@ h2.info {
 
 #navbar strong {
 
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -469,7 +470,7 @@ table td {
 
     font-weight: 400;
     padding: 5px 10px;
-    font-size: 13px;
+    font-size: 14px;
 
     border-bottom: 1px solid #ddd;
 }
@@ -483,13 +484,13 @@ ul {
 
 ul li {
 
-    font-size: 13px;
+    font-size: 14px;
     line-height: 24px;
 }
 
 #content blockquote {
 
-    font-size: 13px;
+    font-size: 14px;
     line-height: 24px;
     font-weight: 500;
     padding: 10px;

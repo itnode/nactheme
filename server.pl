@@ -16,7 +16,7 @@ get '/' => sub {
   
     my $self = shift;
   
-
+    $self->stash( kind => ($self->param('kind') || 'gk_start'));
     $self->render('index');
 };
 

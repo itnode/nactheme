@@ -19,23 +19,23 @@
 
         <div id="navbar">
 
-            <strong>NAKI</strong>
-
-            <a href="#i_start">Variante I</a>
-            <a href="#i_article">Variante II</a>
-            <a href="#i_info">Variante III</a>
-
             <strong>NAK-NRW</strong>
 
-            <a href="#gk_start">Startseite</a>
-            <a href="#gk_article">Beitrag</a>
-            <a href="#gk_info">Info-Seite</a>
+            <a href="?kind=gk_start">Startseite</a>
+            <a href="?kind=gk_article">Beitrag</a>
+            <a href="?kind=gk_info">Info-Seite</a>
 
             <strong>Bezirk</strong>
 
-            <a href="#district_start">Startseite</a>
-            <a href="#district_article">Beitrag</a>
-            <a href="#district_info">Info-Seite</a>
+            <a href="?kind=district_start">Startseite</a>
+            <a href="?kind=district_article">Beitrag</a>
+            <a href="?kind=district_info">Info-Seite</a>
+
+            <strong>NAKI</strong>
+
+            <a href="?kind=i_start">Variante I</a>
+            <a href="?kind=i_article">Variante II</a>
+            <a href="?kind=i_info">Variante III</a>
 
 
         </div>
@@ -430,343 +430,8 @@
 
         [% END %]
 
-        <a name="i_start">&nbsp; </a>
- 
-        [% header_naki %]
-
-        <div class="grid-container" id="content">
-
-            <div class="grid-20 tablet-grid-25">
-           
-                [% menu_vertical_naki %]
-
-                 
-            </div>
-
- 
-            <div class="grid-55 tablet-grid-50">
-
-
-                <h1>Herzlich  willkommen.</h3>
-
-                <div class="block grid-parent clearfix">
-
-                        <div class="grid-60 tablet-grid-70 grid-parent">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-                            
-                        </div>
-
-                        <div class="grid-40 tablet-grid-30">
-                            <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-033.jpg');">        </div>
-                        </div>
-
-                </div>
-
-
-                <h2>Berichte</h2>
-
-                <div class="block grid-parent clearfix">
-
-                    [% FOREACH x IN [ 99,100,101,102,103 ] %]
-
-                    <div class="grid-30 tablet-grid-25 grid-parent"> 
-
-                        <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-[% x | format("%03d") %].jpg');">        </div>
-
-                    </div>
-
-                    <div class="grid-70 tablet-grid-75">
-
-                        <div class="article">
-                            
-                            <h3>Titel des Beitrages</h3>
-                            <p><small>Fr, 09. März 2014</small><br />
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet </p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="clearfix" > </div>
-
-                    [% END %]
-
-
-
-                </div>
-
-
-
-            </div>
-
-            <div class="grid-25 tablet-grid-25">
-
-
-                   <h2>nac.today</h2>
-
-                   <div class="block grid-parent clearfix">
-
-                            [% FOREACH x IN [ 40,80,120,55 ] %]
-
-                            <div class="grid-20 tablet-grid-20 grid-parent"> 
-
-                                <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-[% x | format("%03d") %].jpg');">        </div>
-            
-                            </div>
-
-                            <div class="grid-80 tablet-grid-80">
-   
-                                <div class="article" style="padding-bottom: 10px">
-                                    <strong>[% "Anmeldung zum IKT gestartet und weitere Informtionen finden sie online auf " | truncate(x) %]</strong><br /> 
-                                    <small>Fr, 09. März 2014</small><br />
-                                </div>
-            
-                            </div>
-
-
-                            <div class="clearfix" > </div>
-
-                            [% END %]
-
-
-
-                        </div>
-
-              
-                    <h2>Schaukasten</h2>
-
-                    <div class="block">
-
-                        <img src="/img/schaukasten.jpg" />
-
-                    </div>
-
-
-                
-
-            </div>
-
-        </div>
-
-        [% footer_district %]
-
     
-        <a name="i_article">&nbsp; </a>
- 
-        [% header_naki2 %]
-
-        <div class="grid-container" id="content">
-
-            <div class="grid-20 tablet-grid-25">
-           
-                [% menu_vertical_naki %]
-
-            </div>
-
- 
-            <div class="grid-55 tablet-grid-50">
-
-
-                <h1>Herzlich  willkommen.</h3>
-
-                <div class="block grid-parent clearfix">
-
-                        <div class="grid-60 tablet-grid-70 grid-parent">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-                            
-                        </div>
-
-                        <div class="grid-40 tablet-grid-30">
-                            <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-033.jpg');">        </div>
-                        </div>
-
-                </div>
-
-
-                <h2>Berichte</h2>
-
-                <div class="block grid-parent clearfix">
-
-                    [% FOREACH x IN [ 99,100,101,102,103 ] %]
-
-                    <div class="grid-30 tablet-grid-25 grid-parent"> 
-
-                        <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-[% x | format("%03d") %].jpg');">        </div>
-
-                    </div>
-
-                    <div class="grid-70 tablet-grid-75">
-
-                        <div class="article">
-                            
-                            <h3>Titel des Beitrages</h3>
-                            <p><small>Fr, 09. März 2014</small><br />
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet </p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="clearfix" > </div>
-
-                    [% END %]
-
-
-
-                </div>
-
-
-
-            </div>
-
-            <div class="grid-25 tablet-grid-25">
-
-
-                   <h2>Termine</h2>
-
-                    <div class="block">
-
-
-                        <p>
-                        [% FOREACH x IN [ 1,2,3,4,5 ] %] 
-                            <strong>[% char %] Titel des Termines[% IF x == 3 %], und mehrzeilig, passt auch ins Konzept[% END %]</strong><br />
-                            <small> So, 6, März 2014, 9.30 Uhr</small><br />
-                            <br />
-                        [% END %]
-                        </p>
-
-                        
-
-                    </div>
-
-                    <h2>Schaukasten</h2>
-
-                    <div class="block">
-
-                        <img src="/img/schaukasten.jpg" />
-
-                    </div>
-
-
-                
-
-            </div>
-
-        </div>
-
-        [% footer_district %]
-
-        <a name="i_info">&nbsp; </a>
- 
-        [% header_naki2 %]
-
-        <div class="grid-container" id="content">
-
-            <div class="grid-20 tablet-grid-25">
-           
-                [% menu_vertical_naki %]
-            
-            </div>
-
- 
-            <div class="grid-55 tablet-grid-50">
-
-
-                <h1>Herzlich  willkommen.</h3>
-
-                <div class="block grid-parent clearfix">
-
-                        <div class="grid-60 tablet-grid-70 grid-parent">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-                            
-                        </div>
-
-                        <div class="grid-40 tablet-grid-30">
-                            <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-033.jpg');">        </div>
-                        </div>
-
-                </div>
-
-
-                <h2>Berichte</h2>
-
-                <div class="block grid-parent clearfix">
-
-                    [% FOREACH x IN [ 99,100,101,102,103 ] %]
-
-                    <div class="grid-30 tablet-grid-25 grid-parent"> 
-
-                        <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-[% x | format("%03d") %].jpg');">        </div>
-
-                    </div>
-
-                    <div class="grid-70 tablet-grid-75">
-
-                        <div class="article">
-                            
-                            <h3>Titel des Beitrages</h3>
-                            <p><small>Fr, 09. März 2014</small><br />
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet </p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="clearfix" > </div>
-
-                    [% END %]
-
-
-
-                </div>
-
-
-
-            </div>
-
-            <div class="grid-25 tablet-grid-25">
-
-
-                   <h2>Termine</h2>
-
-                    <div class="block">
-
-
-                        <p>
-                        [% FOREACH x IN [ 1,2,3,4,5 ] %] 
-                            <strong>[% char %] Titel des Termines[% IF x == 3 %], und mehrzeilig, passt auch ins Konzept[% END %]</strong><br />
-                            <small> So, 6, März 2014, 9.30 Uhr</small><br />
-                            <br />
-                        [% END %]
-                        </p>
-
-                        
-
-                    </div>
-
-                    <h2>Schaukasten</h2>
-
-                    <div class="block">
-
-                        <img src="/img/schaukasten.jpg" />
-
-                    </div>
-
-
-                
-
-            </div>
-
-        </div>
-
-        [% footer_district %]
-
-
-    
-
-
-
-        <a name="gk_start">&nbsp; </a>
+        [% IF kind == 'gk_start' %]
  
         [% header %]
 
@@ -860,7 +525,9 @@
        [% footer %]
  
 
-        <a name="gk_article"> &nbsp;</a>
+       [% END %]
+
+       [% IF type == 'gk_article' %]
         
         
         [% header %]
@@ -929,8 +596,9 @@
 
        [% footer %]
  
+        [% END %]
 
-        <a name="gk_info"> &nbsp;</a>
+        [% IF kind == 'gk_info' %]
 
 
         [% header %]
@@ -1065,6 +733,8 @@
 
         [% footer %]
 
+
+        [% END %]
 
         [% header_district = BLOCK %]
 
@@ -1205,8 +875,8 @@
 
       
 
+        [% IF kind == 'district_start' %]
 
-        <a name="district_start">&nbsp;</a>
 
 
         [% header_district %]
@@ -1330,8 +1000,9 @@
 
         [% footer_district %]
 
-    
-        <a name="district_article">&nbsp;</a>
+        [% END %]
+
+        [% IF kind == 'district_article' %]
 
 
         [% header_district %]
@@ -1407,9 +1078,9 @@
 
         [% footer_district %]
 
+        [% END %]
 
-
-        <a name="district_info">&nbsp;</a>
+        [% IF kind == 'district_info' %]
 
 
         [% header_district %]
@@ -1545,8 +1216,343 @@
         [% footer_district %]
 
 
+        [% END %]
+
+        [% IF kind == 'i_start' %]
+ 
+        [% header_naki %]
+
+        <div class="grid-container" id="content">
+
+            <div class="grid-20 tablet-grid-25">
+           
+                [% menu_vertical_naki %]
+
+                 
+            </div>
+
+ 
+            <div class="grid-55 tablet-grid-50">
 
 
+                <h1>Herzlich  willkommen.</h3>
+
+                <div class="block grid-parent clearfix">
+
+                        <div class="grid-60 tablet-grid-70 grid-parent">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                            
+                        </div>
+
+                        <div class="grid-40 tablet-grid-30">
+                            <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-033.jpg');">        </div>
+                        </div>
+
+                </div>
+
+
+                <h2>Berichte</h2>
+
+                <div class="block grid-parent clearfix">
+
+                    [% FOREACH x IN [ 99,100,101,102,103 ] %]
+
+                    <div class="grid-30 tablet-grid-25 grid-parent"> 
+
+                        <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-[% x | format("%03d") %].jpg');">        </div>
+
+                    </div>
+
+                    <div class="grid-70 tablet-grid-75">
+
+                        <div class="article">
+                            
+                            <h3>Titel des Beitrages</h3>
+                            <p><small>Fr, 09. März 2014</small><br />
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="clearfix" > </div>
+
+                    [% END %]
+
+
+
+                </div>
+
+
+
+            </div>
+
+            <div class="grid-25 tablet-grid-25">
+
+
+                   <h2>nac.today</h2>
+
+                   <div class="block grid-parent clearfix">
+
+                            [% FOREACH x IN [ 40,80,120,55 ] %]
+
+                            <div class="grid-20 tablet-grid-20 grid-parent"> 
+
+                                <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-[% x | format("%03d") %].jpg');">        </div>
+            
+                            </div>
+
+                            <div class="grid-80 tablet-grid-80">
+   
+                                <div class="article" style="padding-bottom: 10px">
+                                    <strong>[% "Anmeldung zum IKT gestartet und weitere Informtionen finden sie online auf " | truncate(x) %]</strong><br /> 
+                                    <small>Fr, 09. März 2014</small><br />
+                                </div>
+            
+                            </div>
+
+
+                            <div class="clearfix" > </div>
+
+                            [% END %]
+
+
+
+                        </div>
+
+              
+                    <h2>Schaukasten</h2>
+
+                    <div class="block">
+
+                        <img src="/img/schaukasten.jpg" />
+
+                    </div>
+
+
+                
+
+            </div>
+
+        </div>
+
+        [% footer_district %]
+
+        [% END %]
+
+        [% IF kind == 'i_article' %]
+ 
+        [% header_naki2 %]
+
+        <div class="grid-container" id="content">
+
+            <div class="grid-20 tablet-grid-25">
+           
+                [% menu_vertical_naki %]
+
+            </div>
+
+ 
+            <div class="grid-55 tablet-grid-50">
+
+
+                <h1>Herzlich  willkommen.</h3>
+
+                <div class="block grid-parent clearfix">
+
+                        <div class="grid-60 tablet-grid-70 grid-parent">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                            
+                        </div>
+
+                        <div class="grid-40 tablet-grid-30">
+                            <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-033.jpg');">        </div>
+                        </div>
+
+                </div>
+
+
+                <h2>Berichte</h2>
+
+                <div class="block grid-parent clearfix">
+
+                    [% FOREACH x IN [ 99,100,101,102,103 ] %]
+
+                    <div class="grid-30 tablet-grid-25 grid-parent"> 
+
+                        <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-[% x | format("%03d") %].jpg');">        </div>
+
+                    </div>
+
+                    <div class="grid-70 tablet-grid-75">
+
+                        <div class="article">
+                            
+                            <h3>Titel des Beitrages</h3>
+                            <p><small>Fr, 09. März 2014</small><br />
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="clearfix" > </div>
+
+                    [% END %]
+
+
+
+                </div>
+
+
+
+            </div>
+
+            <div class="grid-25 tablet-grid-25">
+
+
+                   <h2>Termine</h2>
+
+                    <div class="block">
+
+
+                        <p>
+                        [% FOREACH x IN [ 1,2,3,4,5 ] %] 
+                            <strong>[% char %] Titel des Termines[% IF x == 3 %], und mehrzeilig, passt auch ins Konzept[% END %]</strong><br />
+                            <small> So, 6, März 2014, 9.30 Uhr</small><br />
+                            <br />
+                        [% END %]
+                        </p>
+
+                        
+
+                    </div>
+
+                    <h2>Schaukasten</h2>
+
+                    <div class="block">
+
+                        <img src="/img/schaukasten.jpg" />
+
+                    </div>
+
+
+                
+
+            </div>
+
+        </div>
+
+        [% footer_district %]
+
+        [% END %]
+
+        [% IF kind == 'i_info' %]
+ 
+        [% header_naki2 %]
+
+        <div class="grid-container" id="content">
+
+            <div class="grid-20 tablet-grid-25">
+           
+                [% menu_vertical_naki %]
+            
+            </div>
+
+ 
+            <div class="grid-55 tablet-grid-50">
+
+
+                <h1>Herzlich  willkommen.</h3>
+
+                <div class="block grid-parent clearfix">
+
+                        <div class="grid-60 tablet-grid-70 grid-parent">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                            
+                        </div>
+
+                        <div class="grid-40 tablet-grid-30">
+                            <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-033.jpg');">        </div>
+                        </div>
+
+                </div>
+
+
+                <h2>Berichte</h2>
+
+                <div class="block grid-parent clearfix">
+
+                    [% FOREACH x IN [ 99,100,101,102,103 ] %]
+
+                    <div class="grid-30 tablet-grid-25 grid-parent"> 
+
+                        <div style="width: 100%; margin-bottom: 10px; padding-bottom: 66%; background-position: center; background-repeat: no-repeat;  background-size: cover; background-image: url('/img/img-[% x | format("%03d") %].jpg');">        </div>
+
+                    </div>
+
+                    <div class="grid-70 tablet-grid-75">
+
+                        <div class="article">
+                            
+                            <h3>Titel des Beitrages</h3>
+                            <p><small>Fr, 09. März 2014</small><br />
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="clearfix" > </div>
+
+                    [% END %]
+
+
+
+                </div>
+
+
+
+            </div>
+
+            <div class="grid-25 tablet-grid-25">
+
+
+                   <h2>Termine</h2>
+
+                    <div class="block">
+
+
+                        <p>
+                        [% FOREACH x IN [ 1,2,3,4,5 ] %] 
+                            <strong>[% char %] Titel des Termines[% IF x == 3 %], und mehrzeilig, passt auch ins Konzept[% END %]</strong><br />
+                            <small> So, 6, März 2014, 9.30 Uhr</small><br />
+                            <br />
+                        [% END %]
+                        </p>
+
+                        
+
+                    </div>
+
+                    <h2>Schaukasten</h2>
+
+                    <div class="block">
+
+                        <img src="/img/schaukasten.jpg" />
+
+                    </div>
+
+
+                
+
+            </div>
+
+        </div>
+
+        [% footer_district %]
+
+        [% END %]
 
 
 
