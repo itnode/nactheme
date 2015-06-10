@@ -14,6 +14,10 @@
     </head>
     <body>
 
+        <div style="font-family:'HelveticaNeueW02-45Ligh';"> Neue Helvetica® W02 45 Light </div>
+        <div style="font-family:'HelveticaNeueW02-65Medi';"> Neue Helvetica® W02 65 Medium </div><div style="font-family:'HelveticaNeueW02-55Roma';"> Neue Helvetica® W02 55 Roman </div>
+    
+
     [% SET char = "▫" %]
 
 

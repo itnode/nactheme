@@ -28,9 +28,8 @@ body {
 
     padding: 0;
     margin: 0;
-    font-family: 'HelveticaNeue';
-    font-weight: 300;
-}
+    font-family: "HelveticaNeueW02-55Roma";
+ }
 
 a[name] {
    
@@ -46,7 +45,8 @@ a {
 
 h1,h2,h3,h4,h5,h6 {
 
-    font-family: 'HelveticaNeue', sans-serif;
+    font-family: "HelveticaNeueW02-45Ligh";
+    font-weight: 300;
     color: #D6d6d6;
     padding: 30px;    
 }
@@ -78,8 +78,8 @@ hr.grey {
 
 #header h1 {
     
-    font-family: 'HelveticaNeue';
-    font-weight: 600;
+    font-family: "HelveticaNeueW02-65Medi";
+    font-weight: 500;
     font-size:  18px;
     color: #000;
     margin-top: 110px;
@@ -90,8 +90,8 @@ hr.grey {
 
 #header h2 {
 
-    font-family: 'HelveticaNeue';
-    font-weight: 200;
+    font-family: "HelveticaNeueW02-45Ligh";
+    font-weight: 300;
     font-size:  18px;
     color: #000;
     padding: 0;
@@ -136,8 +136,8 @@ hr.grey {
 }
 
 h1 {
-    font-family: 'HelveticaNeue';
-    font-weight: 600;
+    font-family: 'HelveticaNeueW02-45Ligh';
+    font-weight: 300;
     font-size:  18px;
     color: #000;
     border-left: 3px solid #5793C9;
@@ -146,9 +146,9 @@ h1 {
 }
 
 h2 {
-    font-family: 'HelveticaNeue';
-    font-weight: 600;
-    font-size:  18px;
+    font-family: 'HelveticaNeueW02-45Ligh';
+    font-weight: 300;
+     font-size:  18px;
     color: #000;
     border-left: 3px solid #5793C9;
     padding: 15px 10px 5px 12px;
@@ -156,9 +156,9 @@ h2 {
 }
 
 h3 {
-    font-family: 'HelveticaNeue';
-    font-weight: 600;
-    font-size:  14px;
+    font-family: 'HelveticaNeueW02-45Ligh';
+    font-weight: 300;
+     font-size:  14px;
     color: #000;
     padding: 15px 10px 5px 12px;
     border-left: 3px solid #5793C9;
@@ -167,16 +167,18 @@ h3 {
 
 strong {
 
-    font-size: 14px;
+    font-family: "HelveticaNeueW02-65Medi";
     font-weight: 500;
+     font-size: 14px;
     color: #333;
 
 }
 
 small {
 
-    font-size: 12px;
+    font-family: "HelveticaNeueW02-55Roma";
     font-weight: 400;
+    font-size: 12px;
     color: #777;
 }
 
@@ -186,8 +188,9 @@ small {
     padding: 10px 30px 10px 14px;
     font-size: 14px;
     line-height: 20px;
-    font-weight: 300;
     color: #000;
+    font-family: "HelveticaNeueW02-45Ligh";
+    font-weight: 300;
     margin-bottom: 30px;
 }
 
@@ -219,7 +222,6 @@ small {
 
     text-decoration: none;
     color: #5793C9;
-    font-weight:500;
 }
 
 .block ul.list li {
@@ -232,7 +234,6 @@ small {
 
     text-decoration: none;
     color: #444;
-    font-weight:500;
 }
 
 
@@ -314,13 +315,13 @@ img {
 
     font-size: 14px;
     line-height: 20px;
-    font-weight: 600;
- }
+}
 
 .article p {
 
     font-size: 14px;
     line-height: 20px;
+    font-family: "HelveticaNeueW02-45Ligh"; 
     font-weight: 300;
     margin-bottom: 10px;
     padding-right: 20px;
@@ -368,7 +369,6 @@ h2.info {
     text-decoration: none;
     border: 0;
     font-size: 15px;
-    font-weight: 500;
     margin: 0;
 }
 
@@ -444,7 +444,6 @@ h2.info {
 #navbar strong {
 
     font-size: 14px;
-    font-weight: 500;
 }
 
 
@@ -460,7 +459,6 @@ table th {
 
     text-align: left;
     border-bottom: 1px solid #5793C9;
-    font-weight: 500;
     padding: 5px 10px;
     font-size: 14px;
 }
@@ -468,7 +466,6 @@ table th {
 
 table td {
 
-    font-weight: 400;
     padding: 5px 10px;
     font-size: 14px;
 
@@ -492,7 +489,6 @@ ul li {
 
     font-size: 14px;
     line-height: 24px;
-    font-weight: 500;
     padding: 10px;
     border-left: 1px solid #EEE;    
     margin-bottom: 10px;
@@ -501,6 +497,5 @@ ul li {
 
 #content cite {
     display: block; 
-    font-weight: 300;
     font-style: normal;
 }
