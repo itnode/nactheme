@@ -13,10 +13,7 @@
                   
     </head>
     <body>
-
-        <div style="font-family:'HelveticaNeueW02-45Ligh';"> Neue Helvetica® W02 45 Light </div>
-        <div style="font-family:'HelveticaNeueW02-65Medi';"> Neue Helvetica® W02 65 Medium </div><div style="font-family:'HelveticaNeueW02-55Roma';"> Neue Helvetica® W02 55 Roman </div>
-    
+   
 
     [% SET char = "▫" %]
 
@@ -40,6 +37,13 @@
             <a href="?kind=i_start">Variante I</a>
             <a href="?kind=i_article">Variante II</a>
             <a href="?kind=i_info">Variante III</a>
+
+
+            <strong>Menü</strong>
+
+            <a href="?kind=m_1">Ebene 1</a>
+            <a href="?kind=m_2">Ebene II</a>
+            <a href="?kind=m_3">Ebene  III</a>
 
 
         </div>
@@ -1555,6 +1559,179 @@
         </div>
 
         [% footer_district %]
+
+        [% END %]
+
+
+        [% IF kind == 'm_1' %]
+
+        
+        <div class="grid-container">
+
+            <div class="grid-50 tablet-grid-50 clearfix grid-parent" id="header"> 
+
+                <img src="logo.png" id="logo" style="padding: 15px 15px; width: 60px; height: 60px;"> 
+
+                <h1 style="margin-top: 13px">Neuapostolische Kirche</h1>
+                <h2>Norddeutschland</h2>
+
+            </div>
+
+            <div class="grid-50 tablet-grid-50 hide-on-mobile" style="text-align: right">
+                
+
+                <ul id="toolbar_new">
+                    <li><a href="">[% char %] Kontakt</a></li>
+                    <li><a href="">[% char %] Impressum</a><li>
+                    <li><a href="">[% char %] Sitemap</a></li>
+                    <li><input type="search" /></li>
+    
+                </ul>
+            </div>
+        
+            <div class="grid-100">
+
+            <ul id="menu_one_opened" class="inline" style="padding-left: 60px">
+
+                <li><a href="?kind=m_2">Aktuelles</a></li>
+                <li><a href="?kind=m_2">Glaube</a></li>
+                <li><a href="?kind=m_2">Gemeinschaft</a></li>
+                <li><a href="?kind=m_2">Gemeinden</a></li>
+                <li><a href="?kind=m_2">Kirche</a></li>
+
+            </ul>
+
+            </div> 
+
+           <hr class="grey" />
+
+        </div>
+
+
+        [% END %]
+
+
+        [% IF kind == 'm_2' %]
+
+         <div class="grid-container">
+
+
+        <div class="grid-100 tablet-grid-100 clearfix grid-parent" id="header"> 
+
+                <a href="?kind=m_1">
+           <img src="logo.png" id="logo" style="padding: 15px 15px; width: 60px; height: 60px" /> 
+           </a>
+
+
+
+            <ul id="menu_one_opened" class="inline" style="padding-top: 20px">
+
+                <li><a href="?kind=m_2">Aktuelles</a></li>
+                <li><strong>Glaube</strong></li>
+                <li><a href="?kind=m_2">Gemeinschaft</a></li>
+                <li><a href="?kind=m_2">Gemeinden</a></li>
+                <li><a href="?kind=m_2">Kirche</a></li>
+
+            </ul>
+
+            <ul class="inline right">
+                    <li><a href="">[% char %] Kontakt</a></li>
+                    <li><a href="">[% char %] Impressum</a><li>
+                    <li><a href="">[% char %] Sitemap</a></li>
+                    <li><input type="search" /></li>
+    
+                </ul>
+        
+            </div> 
+
+            <ul id="menu_two_opened">
+                <li><a href="?kind=m_3">Impulse</a></li>
+                <li><a href="?kind=m_3">Vision/Mission</a></li>
+                <li><a href="?kind=m_3">Glaubensbekenntnis</a></li>
+                <li><a href="?kind=m_3">Sakramente</a></li>
+                <li><a href="?kind=m_3">Gottesdienste</a></li>
+                <li><a href="?kind=m_3">Seelsorge</a></li>
+                <li><a href="?kind=m_3">Katechismus</a></li>
+
+            </ul>
+
+
+
+           <hr class="grey" />
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+        [% END %]
+
+        
+        [% IF kind == 'm_3' %]
+
+              <div class="grid-container">
+
+
+        <div class="grid-100 tablet-grid-100 clearfix grid-parent" id="header"> 
+
+                <a href="?kind=m_1">
+           <img src="logo.png" id="logo" style="padding: 15px 15px; width: 60px; height: 60px" /> 
+           </a>
+
+
+
+            <ul id="menu_one_opened" class="inline" style="padding-top: 20px">
+
+                <li><a href="?kind=m_2">Aktuelles</a></li>
+                <li><strong>Glaube</strong></li>
+                <li><a href="?kind=m_2">Gemeinschaft</a></li>
+                <li><a href="?kind=m_2">Gemeinden</a></li>
+                <li><a href="?kind=m_2">Kirche</a></li>
+
+            </ul>
+
+            <ul class="inline right">
+                    <li><a href="">[% char %] Kontakt</a></li>
+                    <li><a href="">[% char %] Impressum</a><li>
+                    <li><a href="">[% char %] Sitemap</a></li>
+                    <li><input type="search" /></li>
+    
+                </ul>
+        
+            </div> 
+
+
+            <h2 style="border: 0 none; font-size: 28px">Sakramente
+            
+            
+                <span style="float: right">
+                    <ul id="menu_third_opened">
+                        <li><strong>Übersicht</strong></li>
+                        <li><a href="">Taufe</a></li>
+                        <li><a href="">Versieglung</a></li>
+                        <li><a href="">Abendmahl</a></li>
+                    </ul>
+                </span>
+            
+            </h2>    
+                
+
+
+           <hr class="grey" />
+
+
+
+
+
+
+            
 
         [% END %]
 
