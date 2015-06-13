@@ -21,15 +21,15 @@ header {
 	background: #fff;
 	overflow: hidden;	
 	padding-top: 10px;
-	padding-bottom: 25px;
+	padding-bottom: 15px;
 	
 }
 
 /* Wort-/Bildmarke */
 
 #logo {
-	height: 90px;
-	width: 90px;
+	height: 75px;
+	width: 75px;
 	float: left;
 	background-image: url("../logo.png");
 	background-position: fixed;
@@ -39,8 +39,8 @@ header {
 
 #wordmark {
 	position: absolute;
-	left: 130px;
-	top: 60px;
+	left: 115px;
+	top: 45px;
 }
 
 header h1, header h2 {
@@ -55,7 +55,7 @@ header h1 {
 	font-weight: 500;
 }
 
-header h2 {
+header h2, .sub-nav h2 {
 	font-family: "HelveticaNeueW02-45Ligh";
 	font-weight: 300;
 }
@@ -64,7 +64,6 @@ header h2 {
 
 ul li {
 	font-size: 14px;
-	line-height: 24px;
 }
 
 ul li a {
@@ -79,28 +78,34 @@ ul li a:hover {
 
 #toolbar {
 	margin-top: 50px;
+	height: 30px;
+}
+
+#toolbar ul {
+	float: right;
 }
 
 #toolbar ul li {
-	float: right;
+	float: left;
 	list-style: none;
 	margin-left: 15px;
 }
 
 nav {
-	margin-top: 25px;
+	padding-top: 10px;
 }
 
-nav ul, .sub-nav ul {
-	margin-left: 110px;
+nav ul, .sub-nav ul, .sub-nav h2 {
+	margin-top: 10px;;
+	margin-left: 95px;
 	padding: 0;
 }
 
 nav ul li, .sub-nav ul li {
 	float: left;
 	list-style: none;
-	margin-right: 20px;
-	padding-right: 20px;
+	margin-right: 18px;
+	padding-right: 18px;
 	border-right: 1px solid #d6d6d6;
 }
 
@@ -108,13 +113,48 @@ nav ul li:last-child, .sub-nav ul li:last-child {
 	border-right: none;
 }
 
-nav ul li a.current {
-	text-decoration: underline;
+/* nav ul li a.current {
+	font-weight: bold;
+}*/
+
+/* Navigation mit Unter-Navigation */
+
+.higher-level ul li {
+	font-size: 11px;
+	line-height: 18px;
+	margin-right: 14px;
+	padding-right: 14px;
 }
 
 .sub-nav {
 	position: relative;
-	margin-top: 0;
+	margin-top: 9px;
+	height: 36px;
+	line-height: 18px;
+}
+
+.sub-nav h2 {
+	float: left;
+	color: #5793C9;
+	margin-right: 180px;
+}
+
+.level-3 ul {
+	float: right;
+	margin-bottom: 0;
+}
+
+.level-3 ul li {
+	margin-right: 0;
+	padding-right: 0;
+	margin-left: 18px;
+	padding-left: 18px;
+	border-left: 1px solid #d6d6d6;
+	border-right: none;
+}
+
+.level-3 ul li:first-child {
+	border-left: none;
 }
 
 /* Content-Bereich */
@@ -122,20 +162,26 @@ nav ul li a.current {
 .wrapper_content {
 	position: relative;
 	margin-top: 200px;
+	padding: 0;
 }
 
-/* Navigation mit Unter-Navigation */
-
-.higher-level {
-	display: none;
+.wrapper_content img {
+	max-width: 100%;
 }
+
 
 /* Scroll-Ansicht */
 
-header, #logo, #wordmark, #toolbar, nav {
+header, #logo, #toolbar, nav, .sub-nav {
 	transition: ease 1s;
 	-webkit-transition: ease 1s;
 	-moz-transition: ease 1s;
+}
+
+#wordmark {
+	transition: ease 0.5s;
+	-webkit-transition: ease 0.5s;
+	-moz-transition: ease 0.5s;
 }
 
 .header-scroll {
@@ -150,24 +196,33 @@ header, #logo, #wordmark, #toolbar, nav {
 #toolbar.baseline-scroll {
 	position: absolute;
 	right: 10px;
-	top: 21px;
+	top: 25px;
 	margin: 0;
+}
+
+#toolbar.baseline-scroll ul li, #toolbar.baseline-scroll input {
+	font-size: 11px;
 }
 
 nav.baseline-scroll {
 	position: absolute;
-	top: 21px;
+	top: 28px;
 	margin: 0;
+	max-width: 70%;
 }
 
-.higher-level.baseline-scroll {
-	display: block;
+nav.baseline-scroll ul {
+	margin-top: 0;
 }
 
-.higher-level.baseline-scroll ul li {
-	font-size: 11px;
+.sub-nav.sub-nav-scroll ul, .sub-nav.sub-nav-scroll h2 {
+	margin-top: 18px;
+}
+
+#wordmark.hide-on-scroll {
+	top: 10px;
 }
 
 .hide-on-scroll {
-	display: none;
+	opacity: 0;
 }
