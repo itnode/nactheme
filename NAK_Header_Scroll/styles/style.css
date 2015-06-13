@@ -1,0 +1,111 @@
+body {
+	font-family: "HelveticaNeueW02-55Roma";
+}
+
+#wrapper-page {
+	position: relative;
+}
+
+/* Header */
+
+header, nav {
+	display: block;
+}
+
+header {
+	border-bottom: 1px solid #d6d6d6;
+	z-index: 999;
+	background: #fff;
+	overflow: hidden;
+	
+	transition: height 0.3s;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+}
+
+.header-initial .header-scroll {
+	position: fixed;
+	top: 0;
+}
+
+/* Wort-/Bildmarke */
+
+#logo {
+	height: 90px;
+	width: 90px;
+	float: left;
+	background-image: url("../logo.png");
+	background-position: fixed;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-right: 20px;
+}
+
+header h1, header h2 {
+	font-size: 18px;
+	color: #000;
+	padding: 0;
+	margin: 0;
+}
+
+header h1 {
+	font-family: "HelveticaNeueW02-65Medi";
+	font-weight: 500;
+	margin-top: 50px;
+}
+
+header h2 {
+	font-family: "HelveticaNeueW02-45Ligh";
+	font-weight: 300;
+}
+
+/* Toolbar & Navigation */
+
+ul li {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+ul li a {
+	font-family: "HelveticaNeueW02-55Roma";
+	color: #5793C9;
+}
+
+#toolbar {
+	margin-top: 50px;
+}
+
+#toolbar ul li {
+	float: right;
+	list-style: none;
+	margin-left: 15px;
+}
+
+nav {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+nav ul {
+	margin-left: 110px;
+	padding: 0;
+}
+
+nav ul li {
+	float: left;
+	list-style: none;
+	margin-right: 20px;
+	padding-right: 20px;
+	border-right: 1px solid #d6d6d6;
+}
+
+nav ul li:last-child {
+	border-right: none;
+}
+
+/* Content-Bereich */
+
+.wrapper_content {
+	position: relative;
+	height: 1500px;
+}
