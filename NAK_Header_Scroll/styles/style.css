@@ -14,7 +14,6 @@ header, nav {
 
 header {
 	border-bottom: 1px solid #d6d6d6;
-	height: 160px;
 	max-width: 1200px;
 	position: fixed;
 	top: 0;
@@ -22,6 +21,7 @@ header {
 	background: #fff;
 	overflow: hidden;	
 	padding-top: 10px;
+	padding-bottom: 25px;
 	
 }
 
@@ -89,15 +89,14 @@ ul li a:hover {
 
 nav {
 	margin-top: 25px;
-	margin-bottom: 25px;
 }
 
-nav ul {
+nav ul, .sub-nav ul {
 	margin-left: 110px;
 	padding: 0;
 }
 
-nav ul li {
+nav ul li, .sub-nav ul li {
 	float: left;
 	list-style: none;
 	margin-right: 20px;
@@ -105,8 +104,17 @@ nav ul li {
 	border-right: 1px solid #d6d6d6;
 }
 
-nav ul li:last-child {
+nav ul li:last-child, .sub-nav ul li:last-child {
 	border-right: none;
+}
+
+nav ul li a.current {
+	text-decoration: underline;
+}
+
+.sub-nav {
+	position: relative;
+	margin-top: 0;
 }
 
 /* Content-Bereich */
@@ -114,7 +122,12 @@ nav ul li:last-child {
 .wrapper_content {
 	position: relative;
 	margin-top: 200px;
-	height: 1500px;
+}
+
+/* Navigation mit Unter-Navigation */
+
+.higher-level {
+	display: none;
 }
 
 /* Scroll-Ansicht */
@@ -126,7 +139,7 @@ header, #logo, #wordmark, #toolbar, nav {
 }
 
 .header-scroll {
-	height: 80px;
+	padding-bottom: 15px;
 }
 
 .logo-scroll {
@@ -134,12 +147,25 @@ header, #logo, #wordmark, #toolbar, nav {
 	width: 90px !important;
 }
 
-.baseline-scroll {
-	margin-top: 5px !important;
+#toolbar.baseline-scroll {
+	position: absolute;
+	right: 10px;
+	top: 21px;
+	margin: 0;
 }
 
 nav.baseline-scroll {
 	position: absolute;
+	top: 21px;
+	margin: 0;
+}
+
+.higher-level.baseline-scroll {
+	display: block;
+}
+
+.higher-level.baseline-scroll ul li {
+	font-size: 11px;
 }
 
 .hide-on-scroll {
