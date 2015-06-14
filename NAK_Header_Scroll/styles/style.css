@@ -206,6 +206,19 @@ header, .header-inner, #logo, #wordmark, #toolbar, nav, .sub-nav {
 	opacity: 0;
 }
 
+
+.wrapper_content {
+
+    padding-top: 200px;
+	transition: ease 1s;
+	-webkit-transition: ease 1s;
+	-moz-transition: ease 1s;
+}
+
+.header-scroll +  .wrapper_content {
+
+    padding-top: 150px;
+}
 /* Content-Bereich */
 
 .entry-meta {
