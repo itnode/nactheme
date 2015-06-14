@@ -4,6 +4,8 @@ body {
 	padding: 0;
 }
 
+/* Abstandhalter zu absoluter Navigation*/
+
 .bumper {
 	opacity: 0;
 }
@@ -25,7 +27,7 @@ header {
 
 .header-inner {
 	border-bottom: 1px solid #d6d6d6;
-	min-height: 130px;
+	height: 167px;
 }
 
 /* Wort-/Bildmarke */
@@ -99,40 +101,54 @@ nav {
 	top: 103px;
 }
 
-nav ul, .sub-nav ul, .sub-nav h1 {
+nav ul, .sub-nav ul, .sub-nav h1, .hashtag-bar ul {
 	margin-top: 10px;;
 	margin-left: 95px;
 	padding: 0;
 }
 
-nav ul li, .sub-nav ul li {
-	float: left;
-	list-style: none;
-	margin-right: 18px;
-	padding-right: 18px;
-	border-right: 1px solid #d6d6d6;
+nav ul li {
+	font-size: 15px;
+	font-weight: bold;
+	margin-right: 36px;
+
 }
 
-nav ul li:last-child, .sub-nav ul li:last-child {
-	border-right: none;
+nav ul li, .sub-nav ul li, .hashtag-bar ul li {
+	float: left;
+	list-style: none;
+}
+
+.sub-nav ul li, .hashtag-bar ul li {
+	margin-right: 18px;
 }
 
 .current {
-	color: #444
+	color: #444;
 }
 
 /* Navigation mit Unter-Navigation */
 
-.sub-nav {
+.sub-nav, .hashtag-bar {
 	position: relative;
-	margin-top: 30px;
+	margin-top: 40px;
 	height: 36px;
 	line-height: 18px;
 }
 
 .sub-nav h1 {
 	float: left;
-	margin-right: 180px;
+	font-size: 20px;
+}
+
+.hashtag-bar ul li a {
+	color: #444;
+	text-transform: lowercase;
+	font-size: 12px;
+}
+
+.hashtag-bar ul li a:hover {
+	color: #5793C9;
 }
 
 .level-3 ul {
@@ -167,14 +183,14 @@ nav ul li:last-child, .sub-nav ul li:last-child {
 
 /* Scroll-Ansicht */
 
-header, .header-inner, #logo, #wordmark, #toolbar, nav, .sub-nav {
+header, .header-inner, #logo, #wordmark, #toolbar, nav, .sub-nav, .hashtag-bar {
 	transition: ease 1s;
 	-webkit-transition: ease 1s;
 	-moz-transition: ease 1s;
 }
 
 .header-scroll .header-inner {
-	min-height: 60px;
+	height: 87px;
 }
 
 .header-scroll #logo {
@@ -197,7 +213,7 @@ header, .header-inner, #logo, #wordmark, #toolbar, nav, .sub-nav {
 	margin-top: 0;
 }
 
-.header-scroll .sub-nav {
+.header-scroll .sub-nav, .header-scroll .hashtag-bar {
 	margin-top: 0;
 }
 
@@ -209,7 +225,7 @@ header, .header-inner, #logo, #wordmark, #toolbar, nav, .sub-nav {
 
 .wrapper_content {
 
-    padding-top: 200px;
+    padding-top: 217px;
 	transition: ease 1s;
 	-webkit-transition: ease 1s;
 	-moz-transition: ease 1s;
@@ -219,16 +235,16 @@ header, .header-inner, #logo, #wordmark, #toolbar, nav, .sub-nav {
 
     padding-top: 150px;
 }
-/* Content-Bereich */
+/* Layout Content-Bereich*/
 
 .entry-meta {
-	margin-bottom: 10px;
-	font-size: 12px;
+	font-size: 14px;
 	color: #444;
 }
 
 .article-title {
 	margin-left: 10px;
+	margin-top: 10px;
 }
 
 figure.entry-img, figure img {
@@ -261,6 +277,11 @@ figure.entry-img {
 article, figcaption {
 	font-family: "HelveticaNeue Light", sans-serif;
 	font-size: 14px;
+	line-height: 20px;
+}
+
+section {
+	margin-bottom: 45px;
 }
 
 h5 {
@@ -268,7 +289,7 @@ h5 {
 }
 
 footer {
-	border-top: 1px solid #dbdbdb;
+	border-top: 1px solid #d6d6d6;
 	margin-top: 30px;
 	text-align: right;
 	height: 24px;
