@@ -1,9 +1,7 @@
 body {
 	font-family: "HelveticaNeueW02-55Roma";
-}
-
-#wrapper-page {
-	position: relative;
+	margin: 0;
+	padding: 0;
 }
 
 /* Header */
@@ -13,16 +11,17 @@ header, nav {
 }
 
 header {
-	border-bottom: 1px solid #d6d6d6;
-	max-width: 1200px;
 	position: fixed;
 	top: 0;
 	z-index: 999;
 	background: #fff;
 	overflow: hidden;	
 	padding-top: 10px;
+}
+
+.header-inner {
 	padding-bottom: 15px;
-	
+	border-bottom: 1px solid #d6d6d6;
 }
 
 /* Wort-/Bildmarke */
@@ -32,15 +31,14 @@ header {
 	width: 75px;
 	float: left;
 	background-image: url("../logo.png");
-	background-position: fixed;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
 #wordmark {
-	position: absolute;
-	left: 115px;
-	top: 45px;
+	margin-left: 95px;
+	margin-top: 37px;
 }
 
 header h1, header h2 {
@@ -113,10 +111,6 @@ nav ul li:last-child, .sub-nav ul li:last-child {
 	border-right: none;
 }
 
-/* nav ul li a.current {
-	font-weight: bold;
-}*/
-
 /* Navigation mit Unter-Navigation */
 
 .higher-level ul li {
@@ -184,20 +178,13 @@ header, #logo, #toolbar, nav, .sub-nav {
 	-moz-transition: ease 0.5s;
 }
 
-.header-scroll {
-	padding-bottom: 15px;
-}
-
 .logo-scroll {
 	height: 45px !important;
 	width: 90px !important;
 }
 
 #toolbar.baseline-scroll {
-	position: absolute;
-	right: 10px;
-	top: 25px;
-	margin: 0;
+	margin-top: 18px;
 }
 
 #toolbar.baseline-scroll ul li, #toolbar.baseline-scroll input {
@@ -206,7 +193,7 @@ header, #logo, #toolbar, nav, .sub-nav {
 
 nav.baseline-scroll {
 	position: absolute;
-	top: 28px;
+	top: 31px;
 	margin: 0;
 	max-width: 70%;
 }
@@ -220,7 +207,7 @@ nav.baseline-scroll ul {
 }
 
 #wordmark.hide-on-scroll {
-	top: 10px;
+	margin-top: -50px;
 }
 
 .hide-on-scroll {
