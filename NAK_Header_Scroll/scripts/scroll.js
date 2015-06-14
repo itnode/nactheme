@@ -1,14 +1,9 @@
 var cbpAnimatedHeader = (function() {
 
 	var docElem = document.documentElement,
-		header = document.querySelector( '.header-initial' ),
-		logo = document.querySelector( '#logo' ),
-		wordmark = document.querySelector( '#wordmark' ),
-		toolbar = document.querySelector( '#toolbar' ),
-		nav = document.querySelector( 'nav' ),
-		subnav = document.querySelector( '.sub-nav' ),
+		header = document.querySelector( 'header' ),
 		didScroll = false,
-		changeHeaderOn = 50;
+		changeHeaderOn = 100;
 
 	function init() {
 		window.addEventListener( 'scroll', function( event ) {
@@ -23,19 +18,9 @@ var cbpAnimatedHeader = (function() {
 		var sy = scrollY();
 		if ( sy >= changeHeaderOn ) {
 			classie.add( header, 'header-scroll' );
-			classie.add( logo, 'logo-scroll' );
-			classie.add( wordmark, 'hide-on-scroll' );
-			classie.add( toolbar, 'baseline-scroll' );
-			classie.add( nav, 'baseline-scroll' );
-			classie.add( subnav, 'sub-nav-scroll' );
 		}
 		else {
 			classie.remove( header, 'header-scroll' );
-			classie.remove( logo, 'logo-scroll' );
-			classie.remove( wordmark, 'hide-on-scroll' );
-			classie.remove( toolbar, 'baseline-scroll' );
-			classie.remove( nav, 'baseline-scroll' );
-			classie.remove( subnav, 'sub-nav-scroll' );
 		}
 		didScroll = false;
 	}

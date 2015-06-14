@@ -4,9 +4,13 @@ body {
 	padding: 0;
 }
 
+.bumper {
+	opacity: 0;
+}
+
 /* Header */
 
-header, nav {
+header, nav, figure, article, section {
 	display: block;
 }
 
@@ -20,8 +24,8 @@ header {
 }
 
 .header-inner {
-	padding-bottom: 15px;
 	border-bottom: 1px solid #d6d6d6;
+	min-height: 130px;
 }
 
 /* Wort-/Bildmarke */
@@ -53,14 +57,14 @@ header h1 {
 	font-weight: 500;
 }
 
-header h2, .sub-nav h2 {
+header h2 {
 	font-family: "HelveticaNeueW02-45Ligh";
 	font-weight: 300;
 }
 
 /* Toolbar & Navigation */
 
-ul li {
+ul li, input {
 	font-size: 14px;
 }
 
@@ -71,16 +75,17 @@ ul li a {
 }
 
 ul li a:hover {
-	text-decoration: underline;
+	color: #444;
 }
 
 #toolbar {
-	margin-top: 50px;
-	height: 30px;
+	margin-top: 68px;
 }
 
 #toolbar ul {
 	float: right;
+	padding: 0;
+	margin: 0;
 }
 
 #toolbar ul li {
@@ -90,10 +95,11 @@ ul li a:hover {
 }
 
 nav {
-	padding-top: 10px;
+	position: absolute;
+	top: 103px;
 }
 
-nav ul, .sub-nav ul, .sub-nav h2 {
+nav ul, .sub-nav ul, .sub-nav h1 {
 	margin-top: 10px;;
 	margin-left: 95px;
 	padding: 0;
@@ -111,25 +117,21 @@ nav ul li:last-child, .sub-nav ul li:last-child {
 	border-right: none;
 }
 
-/* Navigation mit Unter-Navigation */
-
-.higher-level ul li {
-	font-size: 11px;
-	line-height: 18px;
-	margin-right: 14px;
-	padding-right: 14px;
+.current {
+	color: #444
 }
+
+/* Navigation mit Unter-Navigation */
 
 .sub-nav {
 	position: relative;
-	margin-top: 9px;
+	margin-top: 30px;
 	height: 36px;
 	line-height: 18px;
 }
 
-.sub-nav h2 {
+.sub-nav h1 {
 	float: left;
-	color: #5793C9;
 	margin-right: 180px;
 }
 
@@ -155,7 +157,6 @@ nav ul li:last-child, .sub-nav ul li:last-child {
 
 .wrapper_content {
 	position: relative;
-	margin-top: 200px;
 	padding: 0;
 }
 
@@ -166,50 +167,99 @@ nav ul li:last-child, .sub-nav ul li:last-child {
 
 /* Scroll-Ansicht */
 
-header, #logo, #toolbar, nav, .sub-nav {
+header, .header-inner, #logo, #wordmark, #toolbar, nav, .sub-nav {
 	transition: ease 1s;
 	-webkit-transition: ease 1s;
 	-moz-transition: ease 1s;
 }
 
-#wordmark {
-	transition: ease 0.5s;
-	-webkit-transition: ease 0.5s;
-	-moz-transition: ease 0.5s;
+.header-scroll .header-inner {
+	min-height: 60px;
 }
 
-.logo-scroll {
+.header-scroll #logo {
 	height: 45px !important;
 	width: 90px !important;
 }
 
-#toolbar.baseline-scroll {
-	margin-top: 18px;
+.header-scroll #toolbar{
+	margin-top: 28px;
 }
 
-#toolbar.baseline-scroll ul li, #toolbar.baseline-scroll input {
-	font-size: 11px;
-}
-
-nav.baseline-scroll {
+.header-scroll nav {
 	position: absolute;
-	top: 31px;
+	top: 38px;
 	margin: 0;
 	max-width: 70%;
 }
 
-nav.baseline-scroll ul {
+.header-scroll nav ul {
 	margin-top: 0;
 }
 
-.sub-nav.sub-nav-scroll ul, .sub-nav.sub-nav-scroll h2 {
-	margin-top: 18px;
+.header-scroll .sub-nav {
+	margin-top: 0;
 }
 
-#wordmark.hide-on-scroll {
-	margin-top: -50px;
-}
-
-.hide-on-scroll {
+.header-scroll #wordmark {
+	margin-top: -28px;
 	opacity: 0;
+}
+
+/* Content-Bereich */
+
+.entry-meta {
+	margin-bottom: 10px;
+	font-size: 12px;
+	color: #444;
+}
+
+.article-title {
+	margin-left: 10px;
+}
+
+figure.entry-img, figure img {
+	padding: 0;
+	margin: 0;
+}
+
+figure.entry-img {
+	margin-bottom: 24px;
+}
+
+.entry-img {
+	position: relative;
+	height: 360px;
+	overflow: hidden;
+}
+
+.entry-img figcaption {
+	position: absolute;
+	bottom: 0;
+	right: 16.666%;
+	width: 16.667%;
+}
+
+.intro-text {
+	font-weight: bold;
+	padding: 0;
+}
+
+article, figcaption {
+	font-family: "HelveticaNeue Light", sans-serif;
+	font-size: 14px;
+}
+
+h5 {
+	margin-top: 14px;
+}
+
+footer {
+	border-top: 1px solid #dbdbdb;
+	margin-top: 30px;
+	text-align: right;
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+	color: #444;
 }
