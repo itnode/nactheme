@@ -65,7 +65,6 @@ header {
 	background-repeat: no-repeat;
 	background-size: contain;
     margin-bottom: 10px;
-    max-width: 100%;
 }
 
 #wordmark {
@@ -201,8 +200,7 @@ nav.hashtag  a:hover {
 }
 
 
-nav.subsub {
-    margin-top: 20px;
+nav.subsub { 
     display: flex;
     align-items: flex-end;
 }
@@ -212,17 +210,19 @@ nav.subsub h1  {
     font-size: 24px;
     font-weight: normal;
     display: inline-block;
-    flex: 1 0 0 ;
-    -webkit-flex: 1 0 0 ;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
 }
 
 nav.subsub a {
 
 	margin-bottom: 0;
     display: inline-block;
-    font-size: 12px;
-    -webkit-flex: 0 1 1;
-    flex: 0 1 1;
+    font-size: 14px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 1;
 }
 
 
@@ -259,7 +259,7 @@ header, .header-inner, #logo, #wordmark, #toolbar, nav, nav.sub, nav.hash {
 
 .wrapper_content {
 
-    padding-top: 200px;
+    padding-top: 170px;
 	transition: ease 1s;
 	-webkit-transition: ease 1s;
 	-moz-transition: ease 1s;
