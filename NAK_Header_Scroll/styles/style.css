@@ -118,7 +118,7 @@ nav.main a img {
 nav.main a {
 	font-size: 18px;
 	font-weight: bold;
-	line-height: 36px;
+	line-height: 28px;
     font-family: "HelveticaNeueW02-55Roma";
 	text-decoration: none;
     display: inline-block;
@@ -136,7 +136,7 @@ nav.main a {
 nav.sub, 
 nav.hashtag   {
 	position: relative;
-	line-height: 20px;
+	line-height: 18px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -154,14 +154,13 @@ nav.sub a {
 }
 
 
-
 nav.hashtag a {
 
     display: inline-block;
 	color: #888;
 	text-transform: lowercase;
 	font-size: 12px;
-    line-height: 36px;
+    line-height: 28px;
     text-decoration: none;
     padding: 0 5px; 
 }
@@ -224,7 +223,7 @@ header, .header-inner, #logo, #wordmark, #toolbar, nav, nav.sub, nav.hash {
 
 /* Verschwindet nach oben und gibt platz für nachfolgenden Elemente frei */
 .header-scroll #wordmark {
-	margin-top: -58px;
+	margin-top: -54px;
 	opacity: 0;
 }
 
