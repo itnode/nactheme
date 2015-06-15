@@ -64,6 +64,7 @@ header {
 	background-position: top right;
 	background-repeat: no-repeat;
 	background-size: contain;
+    margin-bottom: 10px;
 }
 
 #wordmark {
