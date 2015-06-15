@@ -65,6 +65,7 @@ header {
 	background-repeat: no-repeat;
 	background-size: contain;
     margin-bottom: 10px;
+    max-width: 100%;
 }
 
 #wordmark {
@@ -200,7 +201,8 @@ nav.hashtag  a:hover {
 }
 
 
-nav.subsub { 
+nav.subsub {
+    margin-top: 20px;
     display: flex;
     align-items: flex-end;
 }
@@ -218,7 +220,7 @@ nav.subsub a {
 
 	margin-bottom: 0;
     display: inline-block;
-    font-size: 14px;
+    font-size: 12px;
     -webkit-flex: 0 1 1;
     flex: 0 1 1;
 }
