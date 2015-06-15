@@ -1,12 +1,13 @@
 var cbpAnimatedHeader = (function() {
 
-	var docElem = document.documentElement,
-		header = document.querySelector( 'header' ),
-		didScroll = false,
-		changeHeaderOn = 50;
+	var docElem = document.documentElement;
+    var header = document.querySelector( 'header' );
+	var didScroll = false;
+	var changeHeaderOn = 50;
 
 	function init() {
-		window.addEventListener( 'scroll', function( event ) {
+		
+        window.addEventListener( 'scroll', function( event ) {
 			if( !didScroll ) {
 				didScroll = true;
 				setTimeout( scrollPage, 50 );
@@ -16,13 +17,18 @@ var cbpAnimatedHeader = (function() {
 
 	function scrollPage() {
 		var sy = scrollY();
-		if ( sy >= changeHeaderOn ) {
-			classie.add( header, 'header-scroll' );
-		}
-		else {
-			classie.remove( header, 'header-scroll' );
-		}
-		didScroll = false;
+
+        if ( sy >= changeHeaderOn ) {
+		
+            classie.add( header, 'header-scroll' );
+		
+        } else {
+		
+            classie.remove( header, 'header-scroll' );
+		
+        }
+		
+        didScroll = false;
 	}
 
 	function scrollY() {
